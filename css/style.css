@@ -1,0 +1,33 @@
+body {
+    background-color: mistyrose;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.stabilo {
+    background-color: orange;
+}
+
+.bouton {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+code {
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+}

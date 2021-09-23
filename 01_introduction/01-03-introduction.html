@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chap 1/Introduction</title>
+    <!-- MES STYLES -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- mes scripst JS dans l'en-tête  -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+            let bonjour = document.getElementById('b1');
+            bonjour.addEventListener('click', coucou);
+
+            function  coucou(){
+                // ici un commentaire JS 
+                alert('Coucou ! C\'est encore moi !');
+            }
+        });
+    </script>
+</head>
+<body>
+
+        <h1>JavaScript - I/03 introduction</h1>
+        <!-- button#b$*2  -->
+        <button id="b1" class="bouton">
+            cliquez sur moi!
+        </button>
+
+        <button id="b2" class="bouton">
+            Ajoutez un paragraphe
+        </button>
+        <p>On va pouvoir placer notre élément script n'importe où  dans notre page HTML aussi bien dans l'élément <code>head</code>qu'au sein de l'élément <code>body</code>On place également plusieurs bouts de code JS àdifférents endroits de la page</p>
+
+        <script>
+            let ajouter = document.getElementById('b2');
+                ajouter.addEventListener('click', ajout);
+
+                function ajout(){
+                    let para = document.createElement('p');
+                    para.textContent = 'Les feuilles mortes se ramassent à la pelle !';
+                    document.body.appendChild(para);
+                }
+        </script>
+  
+</body>
+</html>

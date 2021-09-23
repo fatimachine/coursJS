@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chap 1/Introduction</title>
+    <!-- MES STYLES -->
+    <link rel="stylesheet" href="../css/style.css">
+  
+</head>
+<body>
+    <!-- on peut mettre du JS directement dans l'élément HTML, dans la balise ouvrante -->
+        <!-- Ces deux scripts fonctionnent avec l'attribut onclick  -->
+        <h1>JavaScript - I/02 introduction</h1>
+        <!-- le 1er script affiche une alerte avec son message -->
+        <button class="bouton" onclick="alert('Coucou papillon !')">Cliquez sur moi !</button>
+        <!-- le second script ajoute un élément p dans la page -->
+        <button class="bouton" onclick="(function(){
+            let para = document.createElement('p');
+            para.textContent = 'Hop ! un nouveau paragraphe : c\'est drôle non ?';
+            document.body.appendChild(para); 
+        })();">
+            Ajoutez un paragraphe : allez !
+        </button>
+</body>
+</html>
