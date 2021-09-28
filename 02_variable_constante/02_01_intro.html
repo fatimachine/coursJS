@@ -1,94 +1,158 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<!-- required meta tags  -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-		<title>Constante&Variable</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-light" style="background-color: #d63384 ;">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Ma nav</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">              Dropdown            </a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
-					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
-					</form>
-				</div>
+
+<head>
+	<!-- required meta tags  -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<title>Javascript </title>
+	<!-- script js en externe  -->
+	<script src="intro.js" async></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-light" style="background-color: #d63384 ;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Ma nav</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active" aria-current="page"
+							href="../02_variable_constante/02_01_intro.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link active" aria-current="page"
+								href="../02_variable_constante/02-02-afficher.html">Affichage</a></li>
+								<li class="nav-item"><a class="nav-link active" aria-current="page"
+									href="../02_variable_constante/02-03-type de données.html">Types de données</a></li>
+
+	
+			
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
 			</div>
-		</nav>
-		<!-- =================================== -->
-		<!-- En-tête de la page -->
-		<!-- =================================== -->
-		<div class="container-fluid bg-light p-5 text-center">
-			<h1>Javascript//II/01 Introduction</h1>
-			<p>
-				Constantes & variables 
-			</p>
 		</div>
-		<!-- =================================== -->
-		<!-- Conteneur principal -->
-		<!-- =================================== -->
-		<div class="container bg-warning text-light">
-			<div class="row">
-				<div class="col-sm-4">
-					<h2>1/Qu'est ce qu'une variable?</h2>
-					<p>
-						Une variable est un conteneur servant à stocker des informations de manière temporaire, du texte (une chaîne de caractère) ou un nombre. La variable varie ! Elle stocke différentes valeurs au fil du temps.
-					</p>
-					<p>
-						Une variable et la valeur sont deux choses différentes
-					</p>
-				</div>
-				<!-- fin col  -->
-				<div class="col-sm-4">
-					<h2>2/Règles de déclaration</h2>
-					<p>
-						On dit (comme en php) que l'on "déclare" une variable. On déclare une variable avec les mots-clefs : 
-					</p>
-					<ul class="bg-white">
-						<li><code>let</code></li>
-						<li><code>var</code></li>
-					</ul>
-					<hr>
-					<ul>
-						<li>Le nom d'une variable doit obligatoirement commencer par une lettre ou un underscore _ </li>
-						<li>Le nom d'une variable ne doit contenir que des lettres, des chiffres et des underscore _  </li>
-						<li>il n'y a pas d'espace dans le nom d'une variable</li>
-						<li>Le nom d'une variable est sensible à la casse</li>
-						<li>cf. introduction.js et <a href="../00_entrainement/00_entrainement.html" target="_blank">Entrainement</a></li>
-					</ul>
-				</div>
-				<!-- fin col  -->
-				<div class="col-sm-4">
-					<h2>3/Initialiser une variable</h2>
-					<p>
-						Quand on assigne une valeur à une variable vide on dit que l'on stocke une valeur ou qu'on initialise une variable
-					</p>
-				</div>
-				<!-- fin col  -->
+	</nav>
+	<!-- =================================== -->
+	<!-- En-tête de la page -->
+	<!-- =================================== -->
+	<div class="container-fluid bg-light p-5 text-center">
+		<h1 class="display-4">Javascript / Introduction</h1>
+		<p class="lead text-decoration-underline">
+			Constantes & variables
+		</p>
+	</div>
+	<!-- =================================== -->
+	<!-- Conteneur principal -->
+	<!-- =================================== -->
+	<div class="container-fluid bg-light mt-4 ">
+		<section class="row mt-4">
+			<div class="col-sm-4">
+				<h2>1/Qu'est ce qu'une variable?</h2>
+				<p>
+					Une variable est un conteneur servant à stocker des informations de manière temporaire, du texte
+					(une chaîne de caractère) ou un nombre. La variable varie ! Elle stocke différentes valeurs au fil
+					du temps.
+				</p>
+				<p>
+					Une variable et la valeur sont deux choses différentes
+				</p>
 			</div>
-			<!-- fin rangée  -->
-		</div>
-		<!-- fin div container  -->
-		<!--  Bootstrap Bundle -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-	</body>
+			<!-- fin col  -->
+			<div class="col-sm-4">
+				<h2>2/Règles de déclaration</h2>
+				<p>
+					On dit (comme en php) que l'on "déclare" une variable. On déclare une variable avec les mots-clefs :
+				</p>
+				<ul class="bg-white">
+					<li><code>let</code></li>
+					<li><code>var</code></li>
+				</ul>
+				<hr>
+				<ul>
+					<li>Le nom d'une variable doit obligatoirement commencer par une lettre ou un underscore _ </li>
+					<li>Le nom d'une variable ne doit contenir que des lettres, des chiffres et des underscore _ </li>
+					<li>il n'y a pas d'espace dans le nom d'une variable</li>
+					<li>Le nom d'une variable est sensible à la casse</li>
+					<li>cf. introduction.js et <a href="../00_entrainement/00_entrainement.html"
+							target="_blank">Entrainement</a></li>
+				</ul>
+			</div>
+			<!-- fin col  -->
+			<div class="col-sm-4">
+				<h2>3/Initialiser une variable</h2>
+				<p>
+					Quand on assigne une valeur à une variable vide on dit que l'on stocke une valeur ou qu'on
+					initialise une variable
+				</p>
+			</div>
+
+			<!-- fin col  -->
+		</section>
+		<!-- fin rangée  -->
+		<section class="row mt-4 ">
+			<h2>4/Différence entre <code> var </code> et <code> let </code></h2>
+			<hr>
+			<div class="col-sm-3 bg-dark text-light">
+				<p><code>let</code> est plus récent et plus contraignant que <code>var</code></p>
+			</div>
+			<!-- fin col  -->
+			<div class="col-sm-3 bg-secondary text-light">
+				<h3>A/La remontée ou hoisting des variables</h3>
+				<p>Avec <code> var </code> on est pas obligé de déclarer la variable avant de la manipuler ou de
+					l'affecter</p>
+			</div>
+			<!-- fin col  -->
+
+			<div class="col-sm-3 bg-dark text-light">
+				<h3>B/La redéclaration des variables</h3>
+				<p>Avec <code> var </code>on avait le droit de déclarer plusieurs fois une même variable en utilisant à
+					chaque fois var (ce qui avait pour effet de modifier la valeur stockée).On ne peut pas le faire avec
+					<code>let</code></p>
+			</div>
+			<!-- fin col  -->
+			<div class="col-sm-3 bg-secondary text-light ">
+				<h3>C/La "portée" des variables</h3>
+				<p>La portée d'une variable désigne l'endroit où cette variable va pouvoir être utilisée dans un script
+				</p>
+				<p><code> let </code> a une portée locale, alors que <code> var </code> a une portée globale</p>
+				<p>Nous reparlerons donc de cette portée des variables lorsque nous aborderons les fonctions en
+					Javascript</p>
+			</div>
+			<!-- fin col  -->
+			<div class="col-sm-12">
+				<h3>D/Conclusion: <code> let </code> ou <code> var </code>?</h3>
+				<p>La syntaxe de déclaration des variables avec let correspond à la nouvelle syntaxe. La syntaxe avec
+					<code>var</code> est l’ancienne syntaxe qui est vouée à disparaitre.</p>
+				<p class="stabilo">Vous devriez donc aujourd’hui toujours utiliser le mot clef <code>let</code> pour
+					déclarer vos variables, sachant que c'est un peu contraignant.</p>
+			</div>
+
+		</section>
+		<!-- fin rangée  -->
+		<section class="row mt-4">
+			<div class="col-sm-6">
+				<h2>5/Quelle utilité pour les variables?</h2>
+				<p>Il sera pratique de stocker différents types de données ou d'informations dan sune variable</p>
+			</div>
+
+			<div class="col-sm-6">
+				<h2>6/Comment afficher le contenu d'une variable?</h2>
+				<p>cf. <a href ="02-02-afficher.html">une page avec des exemples</a> </p>
+			</div>
+		</section>
+
+	</div>
+	<!-- fin div container  -->
+	<!--  Bootstrap Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -10,13 +10,17 @@ main{
 }
 
 .stabilo {
-    background-color: orange;
+    background-color:plum;
+}
+
+.container {
+    background-color: palevioletred;
 }
 
 .bouton {
     background-color: pink;
     border: none;
-    color: white;
+    /* color: white; */
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
