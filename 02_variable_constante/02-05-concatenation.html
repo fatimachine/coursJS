@@ -1,133 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <!-- required meta tags  -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>Javascript /Opérateurs </title>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - II/05 concaténation</title>   
     <link rel="stylesheet" href="../css/style.css">
-
-
-    <!-- script js en externe ici deux versions pour charger le HTML et le CSS-->
-
-    <!-- <script src="affichage.js" async ></script> ::: async= asynchrone avec avertissement-->
-    <!--<script src="affichage.js" defer></script> -->
-</head>
+    </head>
 
 <body>
-    <nav class="navbar navbar-light" style="background-color: #d63384 ;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ma nav</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="../02_variable_constante/02_01_intro.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="../02_variable_constante/02-02-afficher.html">Affichage</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page"
-                            href="../02_variable_constante/02-03-type de données.html">Types de données</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="../02_variable_constante/02-04-opérateur.html">Opérateurs</a></li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!-- =================================== -->
-    <!-- En-tête de la page -->
-    <!-- =================================== -->
-    <div class="container-fluid bg-light p-5 text-center">
-        <h1 class="display-4">JavaScript - II/04 - Les opérateurs arithmétiques</h1>
-        <p class="lead text-decoration-underline">Qu'est ce qu'un opérateur ?</p>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-info p-5 text-center">
+        <h1 class="display-4">JavaScript - II/05 - <i class="bi bi-node-plus text-white"></i> La concaténation...</h1>
+        <p class="lead">& les littéraux de gabarits</p>
     </div>
-     <!-- =========================== -->
+    <!-- =========================== -->
     <!-- Conteneur principal -->
     <!-- =========================== -->
-    <div class="container">
-        <section class="row mt-4 bg-warning">
-            <div class="col-sm-4">
-                <h2>Qu'est-ce qu'un opérateur ?</h2>
-                <p>Un opérateur est un symbole qui va effectuer certaines opérations sur les variables de leurs valeurs. Par exemple l'opérateur * va permettre de multiplier les valeurs de deux variables</p>
-            </div>
-            <!-- fin col  -->
-
-            <div class="col-sm-4">
-                <table class="table table-striped table-hover border-warning m-1">
-                    <caption>Tableau des opérateurs arithmétiques</caption>
-                    <thead>
-                        <tr class="table-primary">
-                            <th>Opérateurs</th>
-                            <th>Nom de l'opération</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>+</td>
-                            <td>Addition</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                            <td>Soustraction</td>
-                        </tr>
-                        <tr>
-                            <td>*</td>
-                            <td>Multiplication</td>
-                        </tr>
-                        <tr>
-                            <td>/</td>
-                            <td>Division</td>
-                        </tr>
-                        <tr>
-                            <td>%</td>
-                            <td>Modulo</td>
-                        </tr>
-                        <tr>
-                            <td>**</td>
-                            <td>Exponentielle</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> 
-            <!-- fin rangée  -->
-            <div class="col-sm-4">
-                <h3>Le modulo et l'exponentielle : késako ?</h3>
-                <dl>
-                    <dt>Modulo</dt>
-                    <dd>Le reste entier d'une division euclidienne. On divise 5 par 3 le résultat est 1 et il reste 2 : le reste est le modulo</dd>
-                    <dt>Exponentielle</dt>
-                    <dd>L’exponentielle correspond à l’élévation à la puissance d’un nombre par un autre nombre : ex. 2<sup>3</sup></dd>
-                </dl>
-            </div>
-        </section>
-        <!-- fin rangée  -->
-
-        <section class="row justify-content-center mt-4">
-            <div class="col-sm-5 bg-info">
-                <h3>Priorité des calculs et utilisation des parenthèses</h3>
-                <p>Si on écrit <code>let h = 1 - 2 - 3;</code>le résultat est -4 les opérations se font de gauche à droite</p>
-                <p>A l'exception de l'élévation à la puissance qui sera calculé en partant de la fin cf. <code>let k = 2 ** 3 ** 2;</code>qui correspond à 2 <sup>3</sup> = 8 puis <sup>3</sup> = 512</p>
-            </div>
-            <!-- fin col  -->
-
-        </section>
-        <!-- fin rangée  -->
-
+    <div class="container p-4">
         <section class="row mt-4">
-            <h2>Les opérateurs d'affectation</h2>
-            <div class="col-sm-4">
-                <p>Les opérateurs d'affectation vont nous permettre d'affecter une certaine valeur à une variable</p>
-                <p>= est l'opérateur de le plus utilisé</p>
-            </div>
+            <h2>La concaténation en JS <span  class="fst-italic">(et des colonnes qui changent selon 5 largeurs d'écrans)</span></h2>
+           
+               <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-12 bg-warning">
+                    <p>Concaténer signifie littéralement "mettre bout à bout"</p>
+                    <p>L'opérateur de concaténation est le <code>+</code> : <span class="stabilo">ATTENTION utilisé avec deux chiffres il sert à aditionner !!!</span></p>
+               </div>
+               <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12 bg-info">
+                   <p><i class="bi bi-bootstrap"></i> Dans ces deux col nous avons les class suivantes <code>&lt;div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12 bg-success">                   
+                &lt;/div></code></p>
+               </div>
+
+                   <div class="row justify-content-center mt-4">
+                       <div class="col-sm-12 col-md-11 col-lg-8">
+                        
+                           <div class="text-center">
+                               <figure class="figure">
+                                   
+                                   <img src="../img/grid_system.png" alt="grid system bootstrap" class="figure-img img-fluid">
+                                   <figcaption class="figure-caption bg-light"><i class="bi bi-bootstrap"></i> - Le sytème de grille de bootstrap</figcaption>
+                               </figure>
+                           </div>
+                   </div>
+                       <!-- fin col -->
+               </div>
+               <!-- fin row pour image -->
         </section>
+        <!-- fin rangée -->
         
     </div>
     <!-- fin div container -->
@@ -138,8 +66,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-        <!-- Mes scripts JS en externe, ici pas besoin de async ni de defer le script se charge en dernier et ne stoppe pas le chargement du HTML et du CSS  -->
-        <!-- la solution la plus utilisée -->
-        <script src="operateur.js"></script>
+        <!-- Mes scripts JS en externe -->
+        <script src="concatenation.js"></script>
 </body>
 </html>
