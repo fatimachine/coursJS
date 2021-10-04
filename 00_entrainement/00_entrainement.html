@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,42 +10,42 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-<script>
-   /*
-        PAGE ENTRAINEMENT SOMMAIRE
-        1- AFFICHAGE
-        2- TYPE DE DONNEES
-        3- CONSTANTES
-        4- CONCATENER
-        5- OPERATEURS NUMERIQUES
-        6- CONDITIONS
-        7- BOUCLES
-        8- FONCTIONS
-        9-SUPPLEMENTS
-        */ 
+    <script>
+        /*
+             PAGE ENTRAINEMENT SOMMAIRE
+             1- AFFICHAGE
+             2- TYPE DE DONNEES
+             3- CONSTANTES
+             4- CONCATENER
+             5- OPERATEURS NUMERIQUES
+             6- CONDITIONS
+             7- BOUCLES
+             8- FONCTIONS
+             9-SUPPLEMENTS
+             */
 
         // 1/AFFICHAGE
-        
-        document.write('<h1> 01 Entrainement Javascript</h1>');
-   
 
-        document.write('<h2 style="background:orange;width:50%;color:#fff;text-align: center;">1/AFFICHAGE</h2>');
+        document.write('<h1> 01 Entrainement Javascript</h1>');
+
+
+        document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">1/AFFICHAGE</h2>');
 
         var maBoite;   // je déclare une variable
-         maBoite = 213;  //je lui affecte une valeur ici un nombre un "number"
+        maBoite = 213;  //je lui affecte une valeur ici un nombre un "number"
 
-         let monAge = 12; // je déclare et j'affecte en même temps
+        let monAge = 12; // je déclare et j'affecte en même temps
 
         //  var maBoite2 = 56;
 
 
         //  console.log(maBoite2);
-         console.log(maBoite,monAge);
-         console.log(monAge);
+        console.log(maBoite, monAge);
+        console.log(monAge);
 
-         document.write('<p>Dans la variable maBoite il y a la valeur suivante:'+maBoite+'</p>');
+        document.write('<p>Dans la variable maBoite il y a la valeur suivante:' + maBoite + '</p>');
 
-         console.log('un message dans le console.log');
+        console.log('un message dans le console.log');
 
         //  alert('Ceci est un message d\'alerte');
 
@@ -52,30 +53,30 @@
 
         //  prompt('Comment allez-vous?');
 
-         let humeur;
-         console.log(humeur);
-         humeur = prompt('Comment va ?');
+        let humeur;
+        console.log(humeur);
+        humeur = prompt('Comment va ?');
 
-         console.log(humeur);
+        console.log(humeur);
 
-         document.write('<p>Votre humeur?:'+humeur+'</p>');
+        document.write('<p>Votre humeur?:' + humeur + '</p>');
 
-         let prenom;
-         console.log(prenom);
-         prenom=prompt('Quel est le prénom de votre maman?');
-         console.log(prenom);
-         document.write('<p>Quel est le prénom de votre maman?:'+prenom+'</p>');
+        let prenom;
+        console.log(prenom);
+        prenom = prompt('Quel est le prénom de votre maman?');
+        console.log(prenom);
+        document.write('<p>Quel est le prénom de votre maman?:' + prenom + '</p>');
 
-         // portée locale ou globale de la variable
+        // portée locale ou globale de la variable
         // humeur et Prenom ont des portées globales 
-        if(true){
+        if (true) {
             let nombre = 58;
             // nombre a une portée locale 
             console.info(nombre);
         }
 
         let nombre2;
-        if(true){
+        if (true) {
             nombre2 = 999;
         }
         // ici la variable a une portée globale 
@@ -84,33 +85,138 @@
         // une variable; le contenu varie
         var noteEval = 12;
         console.info(noteEval);
-        
+
         // addition d'une valeur numérique (number) avec +=
         noteEval += 2;
         console.info(noteEval);
 
-// addition d'une valeur numérique (number) avec += soustraction -=, division /=, multiplication *=
-noteEval += 2
-// noteEval=18
-console.info(noteEval);
+        // addition d'une valeur numérique (number) avec += soustraction -=, division /=, multiplication *=
+        noteEval += 2
+        // noteEval=18
+        console.info(noteEval);
 
-// 2/TYPE DE DONNEES
+        // 2/TYPE DE DONNEES
 
-document.write('<h2 style="background:orange;width:50%;color:#fff;text-align: center;">2/TYPE DE DONNEES</h2>');
-         
-var monTexte = 'Voici une phrase pour Miredi avec une \ '  ;
-document.write('<p>'+ monTexte +'</p>');
-console.log(typeof(monTexte));
+        document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">2/TYPE DE DONNEES</h2>');
 
-console.log(typeof(noteEval));
+        var monTexte = 'Voici une phrase pour Miredi avec une \ ';
+        document.write('<p>' + monTexte + '</p>');
+        console.log(typeof (monTexte));
 
-document.write(typeof(monTexte)+'<br>');
-document.write(typeof(noteEval)+'<br>');
+        console.log(typeof (noteEval));
 
-</script>
-   
+        document.write(typeof (monTexte) + '<br>');
+        document.write(typeof (noteEval) + '<br>');
+
+
+        // 3- CONSTANTES
+
+        document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">3- CONSTANTES</h2>');
+
+        const neBougePas = 'Ma constante impossible à modifier !';
+        let meteo = 'beau temps';
+
+        console.log(meteo);
+
+        meteo = 'mauvais temps';
+
+        console.log(meteo);
+
+        console.log(neBougePas);
+
+        // mini exo afficher avec 
+
+        document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;"> la  constante  neBougePas  contient "' + neBougePas + ' " </p>');
+
+// neBougePas = 'coucou';
+
+
+// 4- CONCATENER
+
+document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">4- CONCATENER</h2>');
+
+// mini exo 2 variable nom,prenom et affichez "The name is CHINE,Fatima CHINE
+let firstName = 'Maria';
+       let lastName = 'Bond' ;
+       console.log(firstName, lastName);
+
+       document.write('<p>The name is ' + lastName + ' , ' + firstName + ' ' + lastName +'</p>');
+
+
+    //    let firstName = 'Fatima';
+    //    let lastName = 'Chine' ;
+    //    document.write('<p>The name is ' + lastName + ' , ' + firstName + ' '+ lastName +'</p>');
+
+   alert('The name is ' + lastName + ' , ' + firstName + ' '+ lastName +'');
+
+
+      // 5- OPERATEURS NUMERIQUES
+
+document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>');
+
+// addition
+let addition = 10+5;
+document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une addition: ' + addition + ' " </p>');
+
+//exo affichez le résultat d'une mutiplication 
+let multiplication = 10*5;
+document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une mutiplication:  ' + multiplication + ' " </p>');
+
+
+//exo affichez le résultat d'une soustraction
+let soustraction = 10-5;
+document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une soustraction:  ' + soustraction + ' " </p>');
+
+//exo affichez le résultat d'une division
+let division = 10/3;
+document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une division : ' + division + ' " </p>');
+
+
+// modulo 
+// ex pour l'utilisation du modulo; répondre à la question suivante : j'ai 10 billes je les partage entre 3 personnes il m'en reste combien 
+
+let modulo = 10 % 3;
+console.log(modulo);
+
+// exo affichez : le modulo de 10%3 est 1 
+
+document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;"> le modulo de 10%3 est : ' + modulo + '  </p>');
+
+// exo 
+
+document.write('<h3 style=" margin:auto; background:orange;width:60%;color:#fff;text-align: center;">5- exo- quel âge avez-vous ?</h3>');
+
+
+let age = prompt('quel âge avez-vous ?');
+        console.log(age);
+        document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">Vous avez:' + age + 'ans</p>');
+
+        //exo 
+        //Consigne: 1- récupérer dans un prompt ()une valeur numérique donnée par un utilisateur
+        // envoyer ensuite une alerte indiquant le résultat de cette valeur au cube puis au carrée 
+
+        let votreChiffre = prompt('Quel est votre chiffre?');
+        // console.log(votreChiffre);
+        
+        // console.log(votreChiffre  **3);
+        // alert('votre chiffre=  ' + votreChiffre+'*'+votreChiffre+'');
+
+        let auCarre = votreChiffre * votreChiffre;
+        // console.log(auCarre);
+       
+        let auCube = votreChiffre * votreChiffre * votreChiffre;
+        console.log(auCarre , auCube);
+
+        alert('vous avez saisi le nombre: ' + votreChiffre+'\nce  chiffre au carré est égal à ' +auCarre+' \nce chiffre au cube est :'+ auCube);
+
+       
+        // document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">votre chiffre:' + votreChiffre + '</p>');
+    </script>
+
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

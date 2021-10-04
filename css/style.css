@@ -35,3 +35,7 @@ code {
     color: red;
     padding: 5px;
 }
+
+h2 {
+    border-bottom: 2px solid pink;
+}
