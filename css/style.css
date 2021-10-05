@@ -39,3 +39,11 @@ code {
 h2 {
     border-bottom: 2px solid pink;
 }
+
+td p:nth-child(even) {
+    background: rgb(199, 243,243);
+}
+
+em {
+    background-color:rgb(199, 243,243);
+}
