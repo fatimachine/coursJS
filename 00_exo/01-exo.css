@@ -1,0 +1,18 @@
+/* feuille de style exo 01 */
+
+body {
+    background-color: lightskyblue;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+   
+}
+
+h1 {
+    text-align: center;
+    background-color: lightseagreen;
+}

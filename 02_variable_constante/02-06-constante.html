@@ -12,7 +12,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>JavaScript - II/05 concaténation</title>
+    <title>JavaScript - II/06 Constante</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -36,9 +36,6 @@
                             href="../02_variable_constante/02-04-opérateur.html">Opérateurs</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page"
                             href="../02_variable_constante/02-05-concatenation.html">Concaténation</a></li>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="../02_variable_constante/02-06-constante.html">Constante</a></li>
-    
 
                 </ul>
                 <form class="d-flex">
@@ -52,60 +49,32 @@
     <!-- En-tête de la page -->
     <!-- =================================== -->
     <div class="container-fluid bg-light p-5 text-center">
-        <h1 class="display-4">JavaScript - II/05 - <i class="bi bi-node-plus text-white"></i> La concaténation...</h1>
-        <p class="lead">& les littéraux de gabarits</p>
+        <h1 class="display-4"><i class="icon-javascript"></i>Javascript /Les Constantes</h1>
+        <p class="lead text-decoration-underline">Le JS supporte depuis quelques années l'utilisation des constantes
+        </p>
     </div>
     <!-- =========================== -->
     <!-- Conteneur principal -->
     <!-- =========================== -->
     <div class="container p-4">
         <section class="row mt-4">
-            <h2>La concaténation en JS <span class="fst-italic">(et des colonnes qui changent selon 5 largeurs
-                    d'écrans)</span></h2>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xxl-12 bg-warning">
-                <p>Concaténer signifie littéralement "mettre bout à bout"</p>
-                <p>L'opérateur de concaténation est le <code>+</code> : <span class="stabilo">ATTENTION utilisé avec
-                        deux chiffres il sert à aditionner !!!</span></p>
+            <div class="col-sm-12 col-md-6">
+                <h2>1- Définition & utilité des constantes </h2>
+                <p>Une constante est similaire à une variable au sens ou c'est un containeur pour une valeur, mais <span
+                        class="stabilo">on ne pourra pas modifier la valeur d'une constante !</span></p>
             </div>
-            <div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12 bg-secondary">
-                <p><i class="bi bi-bootstrap"></i> Dans ces deux col nous avons les class suivantes <code>&lt;div class="col-12 col-sm-6 col-md-8 col-lg-6 col-xxl-12 bg-success">                   
-                &lt;/div></code></p>
+            <!-- fin col 1  -->
+            <div class="col-sm-12 col-md-6">
+                <h2>2- Déclarer une constante</h2>
+                <p>Pour déclarer une constante en JS on utilise le mot clef <code>const</code>.</p>
+                <p>On déclare une constante en JS comme une variable, par contre il faut obligatoirement l'initialiser
+                    lors de sa déclaration.</p>
             </div>
 
-            <div class="row justify-content-center mt-4">
-                <div class="col-sm-12 col-md-11 col-lg-8">
+            <!-- fin col 2  -->
 
-                    <div class="text-center">
-                        <figure class="figure">
-
-                            <img src="../img/image.png" alt="grid system bootstrap" class="figure-img img-fluid">
-                            <figcaption class="figure-caption bg-light"><i class="bi bi-bootstrap"></i> - Le sytème de
-                                grille de bootstrap</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <!-- fin col -->
-            </div>
-            <!-- fin row pour image -->
         </section>
-        <!-- fin rangée -->
-        <section class="row">
-            <h2>2-Les littéraux de gabarits</h2>
-            <div class="col">
-                <h3>Concaténation habituelle </h3>
-                <p>Il faut toujours entourer nos chaînes de caractères (nos textes) avec des apostrophes(des quotes ou simples quotes) ou des guillemets droits ou guillemets doubles</p>
-            </div>
-            <div class="col">
-                <h3>3ème méthode...</h3>
-                <p>Il existe une 3ème méthode ,introduite plus récemment et qui utilise les accents graves <kbd>Alt GR + 7è</kbd>et le symbole $</p>
-                <p>ex: <code>`x contient ${x}`</code>est l'équivalent de <code>'x contient ' + x' </code></p>
-            </div>
-        </section>
-
-   
     </div>
-    <!-- fin div container -->
 
     <!-- Optional JavaScript -->
     <!-- Bootstrap Bundle with Popper -->
@@ -114,7 +83,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Mes scripts JS en externe -->
-    <script src="concatenation.js"></script>
+    <script src="constante.js"></script>
 </body>
 
 </html>
