@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript /III-If</title>
+    <title>Javascript /III-If,else</title>
     <link rel="stylesheet" href="../css/style.css">
     
     <!-- Bootstrap CSS -->
@@ -46,36 +46,32 @@
     <!-- En-tête de la page -->
     <!-- =================================== -->
     <div class="container-fluid bg-light p-5 text-center">
-        <h1 class="display-4">Javascript /III-if</h1>
-        <p class="lead text-decoration-underline">La condition if est la plus utilisée des conditions</p>
+        <h1 class="display-4">Javascript /III-If,else</h1>
+    
     </div>
     <!-- =========================== -->
     <!-- Conteneur principal -->
     <!-- =========================== -->
     <div class="container p-4">
         <section class="row mt-4">
-            <h2>If</h2>
-            <div class="col-sm-12 col-md-4">
-                <h3> 1- if...</h3>
-                <p> La condition <code>if</code> est l'une des plus utilisée et est également la plus simple à appréhender puisqu'elle va nous permettre d'exécuter un bloc de code <em>si Et seulment si le résultat vaut <code>true</code></em>.</p>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <h3>Attention ! </h3>
-                <p>tout test d'une condition va être évalué dans contexte booléen , danc  à <code>true</code> à l'execption des valeurs suivantes qui vont être évaluées à <code>false</code></p>
-                <ul>
-                    <li>la valeur <code>0</code>(Zéro)</li>
-                    <li>le booléen <code>false</code></li>
-                    <li>une chaîne de carctére vide</li>
-                    <li>la valeur <code>null</code> </li>
-                    <li>la valeur <code>undefined</code></li>
-                    <li>la valeur <code>NAN</code>(NOT a Number)</li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <h3>3-Inverser la valeur logique d'un test</h3>
-                <p>Le code placé dans le if n'est exécuté que si le résultat de la comparaison est <code>true</code>.</p>
-                <p>Dans certaines situations,on préfère vérifier si la comparaison est <code>false</code> : on peut vérifier que c'est faux en comparant explicitement le résultat de la comparaison à <code>false</code>.</p>
-            </div>
+            <h2> 1- if...else,si...sinon</h2>
+            <div class="col-sm-12 col-md-6">
+                <h3>titre</h3>
+           <p>La structure conditionnelle if...else sera plus complète car on va exécuter un bloc de code si un test renvoie <code>true</code>ou un autre dans le cas contraire.</p>
+            </div><!-- fin col  -->
+            <div class="col-sm-12 col-md-4 bg-light border border-primary p-2">
+               <code>
+                if(x>1) {<br>
+                    // si le test est vrai j'exécute le bloc qui suit <br>
+                    alert('x contient' + x+ 'et cette valeur est supérieur à 1');<br>
+                }else{<br>
+                    // sinon j'exécute celui-ci <br>
+                    alert('x contient' + x+ 'et cette valeur est inférieur à 1');<br>
+                } 
+               </code>
+             
+            </div><!-- fin col  -->
+       
 
         </section>
     </div>
@@ -88,7 +84,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Mes scripts JS en externe -->
-    <script src="if.js"></script>
+    <script src="ifelse.js"></script>
 </body>
 
 </html>
