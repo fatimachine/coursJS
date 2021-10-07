@@ -126,7 +126,7 @@
 
         // mini exo afficher avec 
 
-        document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;"> la  constante  neBougePas  contient "' + neBougePas + ' " </p>');
+        document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> la  constante  neBougePas  contient "' + neBougePas + ' " </p>');
 
 // neBougePas = 'coucou';
 
@@ -140,7 +140,7 @@ let firstName = 'Maria';
        let lastName = 'Bond' ;
        console.log(firstName, lastName);
 
-       document.write('<p>The name is ' + lastName + ' , ' + firstName + ' ' + lastName +'</p>');
+       document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">The name is ' + lastName + ' , ' + firstName + ' ' + lastName +'</p>');
 
 
     //    let firstName = 'Fatima';
@@ -156,20 +156,20 @@ document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;
 
 // addition
 let addition = 10+5;
-document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une addition: ' + addition + ' " </p>');
+document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une addition: ' + addition + ' " </p>');
 
 //exo affichez le résultat d'une mutiplication 
 let multiplication = 10*5;
-document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une mutiplication:  ' + multiplication + ' " </p>');
+document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une mutiplication:  ' + multiplication + ' " </p>');
 
 
 //exo affichez le résultat d'une soustraction
 let soustraction = 10-5;
-document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une soustraction:  ' + soustraction + ' " </p>');
+document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une soustraction:  ' + soustraction + ' " </p>');
 
 //exo affichez le résultat d'une division
 let division = 10/3;
-document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">  le résultat d\'une division : ' + division + ' " </p>');
+document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une division : ' + division + ' " </p>');
 
 
 // modulo 
@@ -180,16 +180,16 @@ console.log(modulo);
 
 // exo affichez : le modulo de 10%3 est 1 
 
-document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;"> le modulo de 10%3 est : ' + modulo + '  </p>');
+document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> le modulo de 10%3 est : ' + modulo + '  </p>');
 
 // exo 
 
-document.write('<h3 style=" margin:auto; background:orange;width:60%;color:#fff;text-align: center;">5- exo- quel âge avez-vous ?</h3>');
+document.write('<h3 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- exo- quel âge avez-vous ?</h3>');
 
 
 let age = prompt('quel âge avez-vous ?');
         console.log(age);
-        document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">Vous avez:' + age + 'ans</p>');
+        document.write('<p style="margin:auto; background:lightgrey;width:80%;color:#fff;text-align: center;">Vous avez:' + age + 'ans</p>');
 
         //exo 
         //Consigne: 1- récupérer dans un prompt ()une valeur numérique donnée par un utilisateur
@@ -209,7 +209,7 @@ let age = prompt('quel âge avez-vous ?');
 
         alert('vous avez saisi le nombre: ' + votreChiffre+'\nce  chiffre au carré est égal à ' +auCarre+' \nce chiffre au cube est :'+ auCube+'');
 
-  document.write('<p style="background:lightgrey;width:50%;color:#fff;text-align: center;">votre chiffre:' + votreChiffre + ' ce  chiffre au carré est égal à ' +auCarre+' ce chiffre au cube est :'+ auCube+'</p>');
+  document.write('<p style="margin:auto; background:lightgrey;width:50%;color:#fff;text-align: center;">votre chiffre:' + votreChiffre + ' ce  chiffre au carré est égal à ' +auCarre+' ce chiffre au cube est :'+ auCube+'</p>');
     
 //   6- CONDITIONS
 
@@ -221,13 +221,38 @@ let age = prompt('quel âge avez-vous ?');
 //   mini exo 
 // si a est supérieur à b j'écris "a est supérieur" sinon j'écris a n'est pas supérieur à b dans un document write
 
-if(a>b) {
-    // si le test est vrai j'exécute le bloc qui suit 
-    document.write('IF a contient' + a+ 'et cette valeur est inférieure à b');
-}else{
-    // sinon  
-    document.write(' ELSE b contient ' + b + ' a n\'est donc pas supérieur à b ');  
+// if(a>b) {
+//     // si le test est vrai j'exécute le bloc qui suit 
+//     document.write('IF a contient' + a+ 'et cette valeur est inférieure à b');
+// }else{
+//     // sinon  
+//     document.write(' ELSE b contient ' + b + ' a n\'est donc pas supérieur à b ');  
+// }
+
+// mini exo 
+// tester l'égalité de a et b 
+
+// if( a== b ) {
+
+//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a est égal à b</p>');
+// }
+// else{
+//     // sinon  
+//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a n\'est pas égal à b</p>')
+// }
+
+// EXO 
+// tester si cette condition est remplie : a et b sont-ils égaux en valeur et en type 
+
+ if( a=== b ) {
+
+    document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est égal à b en valeur et en type</p>');
 }
+ else{
+// sinon  
+ document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est différent en valeur et/ou en type</p>')
+}
+
     </script>
 
 </head>
