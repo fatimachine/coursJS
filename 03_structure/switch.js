@@ -10,20 +10,23 @@ console.log(typeof x, x);
 
 switch (x) { /*  on va switcher,on va commuter sur la variable*/
     case 2:
-        document.getElementById('p1').innerHTML = 'x stocke la valeur 2';
+        document.getElementById('p1').innerHTML = 'x contient la valeur 2';
         break;/* break ne pas oublier le break >>> il sort du switch si le cas est vrai*/
     case 5:
-        document.getElementById('p1').innerHTML = 'x stocke la valeur 5';
+        document.getElementById('p1').innerHTML = 'x contient la valeur 5';
         break;
     case 10:
-        document.getElementById('p1').innerHTML = 'x stocke la valeur 10';
+        document.getElementById('p1').innerHTML = 'x contient la valeur 10';
         break;
         case 15:
-        document.getElementById('p1').innerHTML = 'x stocke la valeur 15';
+        document.getElementById('p1').innerHTML = 'x contient la valeur 15';
         break;
         case 20:
-        document.getElementById('p1').innerHTML = 'x stocke la valeur 20';
+        document.getElementById('p1').innerHTML = 'x contient la valeur 20';
         break;
-    default: document.getElementById('p1').innerHTML = 'x ne contient ni 2,ni 5,ni 10, ni 15 ,ni 20';
+    default: /* après default il sortira du switch naturellement */
+    document.getElementById('p1').innerHTML = 'x ne contient ni 2,ni 5,ni 10, ni 15 ,ni 20';
     break;
-}
+}//fin switch
+
+
