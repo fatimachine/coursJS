@@ -244,14 +244,48 @@ let age = prompt('quel âge avez-vous ?');
 // EXO 
 // tester si cette condition est remplie : a et b sont-ils égaux en valeur et en type 
 
- if( a=== b ) {
+//  if( a=== b ) {
 
-    document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est égal à b en valeur et en type</p>');
+//     document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est égal à b en valeur et en type</p>');
+// }
+//  else{
+// // sinon  
+//  document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est différent en valeur et/ou en type</p>')
+// }
+
+
+
+//EXO tester la valeur de a par rapport au chiffre 5 ; inférieur ?égal?supérieur? ou alors c'est pas un nombre,dans une condition multiple (blocs de code>document.write)
+
+
+console.log(a);
+
+if(a < 5){
+    document.write('<p> 1/ a contient une valeur strictement supérieur à 5</p>');
+}else if (a== 5) {
+    document.write('<p>2/ a contient une valeur égale à 5</p>');
+}else if (a<1) {
+    document.write( '<p>3/ x contient une valeur strictement inférieur à 1</p>');
+}else if(a<0) {
+    document.write('<p> 4/a contient une valeur strictement inférieur à 0</p>');
+}else if(a < -2) {
+    document.write('<p> 5/ a contient une valeur strictement inférieur à -2</p>');
+}else {
+    document.write('<p>6/ la valeur de a n\'a pas pu être comparée à un nombre</p>');
 }
- else{
-// sinon  
- document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est différent en valeur et/ou en type</p>')
+
+if(a > b && b > c) {
+    document.write('<p> pour a qui vaut '+ a +  ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' a est supérieur à b et b est supérieur à c </p>'); 
+}else{
+    document.write('<p> on teste si a ('+ a +  ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas au moins une des deux conditions n\'est pas remplie</p>'); 
 }
+
+if(a > b || b > c) {
+    document.write('<p> pour a qui vaut '+ a +  ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' ici au moins une des deux conditions est vraie</p>'); 
+}else{
+    document.write('<p> on teste si a ('+ a +  ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas aucune des conditions n\'est vraie.</p>'); 
+}
+
 
     </script>
 
