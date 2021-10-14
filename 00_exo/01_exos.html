@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exos</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+    <script>
+        // EXO 1 - Déclaration des variables
+
+        // num qui contient le nombre 255
+        // txt qui contient la chaîne de caractères 255
+        // bin (pour binaire ou binary) qui contient la valeur booléenne vraie
+        // flt (pour float décimal ou flottant) qui contient la valeur 7,23
+
+        // affichez les contenus des variables dans des console.log
+
+        let num = 255;
+        let txt = '255';
+        let bin = true;
+        let flt = 7.23;
+
+        console.log(num, txt, bin, flt);
+        console.log(typeof num, num);
+        console.log(typeof txt, txt);
+        console.log(typeof bin, bin);
+        console.log(typeof flt, flt);
+
+        // EXO 2
+        // A Appliquez à num l'opérateur d'incrémentation ++ (ce qui doit donner 256)
+    //    num = ++num;
+    //    console.log(num);
+    num++;
+    console.log(num);
+
+        // B Concaténez à la chaîne txt la chaîne suivante : " est ici une chaîne de caractères."
+        // et la concaténation dans un document.write
+        document.write(txt + ' est ici une chaîne de caractères.');
+
+        // C Inversez la valeur logique de bin 
+        bin = false;
+        console.log(bin);
+        let bin2 = true;
+        console.info('bin2 ' + bin2);
+        bin2 = !bin2;
+        console.info(bin2);
+        // D Ajoutez à flt la valeur contenue dans num
+        flt = flt + num;
+        console.log(flt);
+
+        flt += num;
+        console.log(flt);
+        console.log(num, txt, bin, flt);
+
+        // EXO 3
+
+        // num2 qui contient le nombre 23
+        // txt2 qui contient la chaîne de caractère 33
+        // Affichez le résultat de txt2 + num2 avec console.log
+        // Affichez le résultat de num2 + txt2 avec console.log
+
+        let num2 = 23;
+        let txt2 = '33';
+        console.log(num2, txt2);
+
+        console.log(num2 + txt2);
+        // on ne PEUT PAS additionner une string et un number
+
+        // 1 On ne peut faire des opérations avec des variables de types différents
+        // 2 si on veut le faire il faut écrire les conversions dans le programme
+        // 3 JS est un langage "typé"
+
+        // EXO 4
+        // on a deux variables 
+        let nbr1 = 22;
+        let lettres = '18';
+
+        console.log(typeof nbr1, nbr1);
+        console.log(typeof lettres, lettres);
+
+        // console.log(nbr1 + parseInt(lettres));
+        let transformeEnNombre = 0;//nelle variable de type number initialisée à 0 elle va me servir à changer un string en number
+        console.log(transformeEnNombre);
+
+        transformeEnNombre = parseInt(lettres);// parse = analyser INT = integer(entier)
+
+        console.log(nbr1 + transformeEnNombre);
+
+        
+    </script>
+</head>
+<body>
+        <h1>Exercices JS - Fichier 01_exos.html</h1>
+</body>
+</html>
