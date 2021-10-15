@@ -379,25 +379,25 @@ console.log(phrase1, phrase2);
 
 //toUpperCase 
 
-console.log(phrase1.toUpperCase());
+// console.log(phrase1.toUpperCase());
 
 document.write('<p> Cette phrase en majuscule : ' + phrase1.toUpperCase() + '</p>');
 document.write('<p> Cette phrase en minuscule : ' + phrase2.toLowerCase() + '</p>');
 
 //une fonction super importante length
 
-var phrase3 = 'The name is Bond, James Bond.';
-console.log(phrase3.length);
+// var phrase3 = 'The name is Bond, James Bond.';
+// console.log(phrase3.length);
 
-document.write('<p>Test;dans la phrase suivante : ' + phrase3 + ' il y a ' + phrase3.length + ' caractères.</p>');
+// document.write('<p>Test;dans la phrase suivante : ' + phrase3 + ' il y a ' + phrase3.length + ' caractères.</p>');
 
 // exo 
 
-function beauTemps() {
-	return document.write('<p>il fait beau !</p>');
-}
+// function beauTemps() {
+// 	return document.write('<p>il fait beau !</p>');
+// }
 
-beauTemps();
+// beauTemps();
 
 // function coucou () {
 //     return alert ('Coucou les amis');
@@ -405,33 +405,33 @@ beauTemps();
 
 // coucou();
 
-function direBonjour(prenom) {
-	var message = document.write('<p> Bonjour ' + prenom + '.Comment vas-tu ?</p>');
-	return message;
-}
-direBonjour('prenom');
+// function direBonjour(prenom) {
+// 	var message = document.write('<p> Bonjour ' + prenom + '.Comment vas-tu ?</p>');
+// 	return message;
+// }
+// direBonjour('prenom');
 
-function uneLigne() {
-	return document.write('<hr>');
-}
-uneLigne();
+// function uneLigne() {
+// 	return document.write('<hr>');
+// }
+// uneLigne();
 //prompt() et une fonction
 
-let prenom3 = prompt('Quel est votre prénom ?');
-console.log = (prenom3);
+// let prenom3 = prompt('Quel est votre prénom ?');
+// console.log = (prenom3);
 
-function direBonjour2(prenom3) {
- var  message2 = document.write('<p>Bonjour, ' + prenom3 + ',Bienvenue sur notre site !</p>');
-    return message2;
-}
+// function direBonjour2(prenom3) {
+//  var  message2 = document.write('<p>Bonjour, ' + prenom3 + ',Bienvenue sur notre site !</p>');
+//     return message2;
+// }
 
-direBonjour2(prenom3);
+// direBonjour2(prenom3);
 
 // exo 
 // 1 demandez "quelle est la saison ? et quelle est la température extérieure "
 
-let saison = prompt('quelle est la saison ?');
-let temperature = prompt(' quelle est la température extérieure ?');
+// let saison = prompt('quelle est la saison ?');
+// let temperature = prompt(' quelle est la température extérieure ?');
 //  console.log(saison);
 
 // function questionMeteo(saison,temperature) {
@@ -450,6 +450,31 @@ let temperature = prompt(' quelle est la température extérieure ?');
 // } else {
 // 	document.write('<p>Else contient ' + saison + ' Nous  sommes en ' + saison + ' ! </p>');
 // }
+
+// EXO 
+    // faire une fonction quelleEcole() 
+    // demandez à votre visiteur "quel âge à votre enfant ?" 
+    // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans our rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
+
+	var ageEnfant = prompt ('Quel âge à votre enfant ?');
+	console.log(ageEnfant);
+
+	function quelleEcole( ){
+		if (ageEnfant < 6 ) {
+			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il doit avoir plus de 6 ans pour rentrer à l\'école</p>');
+		}else if (ageEnfant >= 6 && ageEnfant < 11 ) {
+			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 6 ans et 11 ans , il va en primaire</p>');
+		}else if (ageEnfant >= 11 && ageEnfant < 15 ) {
+			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 11 ans et 15 ans , il va au collège</p>');
+		}else if (ageEnfant >= 15 && ageEnfant < 18 ) {
+			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 15 ans et 18 ans , il va au lycée</p>');
+		}else {
+			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il n\'est pas scolarisable.</p>');
+		}
+		return ecole;
+	}//fin fonction
+	//on appelle la fonction après
+	quelleEcole(ageEnfant);
 
     </script>
 
