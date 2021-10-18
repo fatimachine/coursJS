@@ -10,11 +10,12 @@ main{
 }
 
 .stabilo {
-    background-color:plum;
+    background-color: mistyrose;
 }
 
 .container {
     background-color: palevioletred;
+    color: white;
 }
 
 .bouton {
@@ -32,7 +33,7 @@ main{
 
 code {
     background-color: #fff;
-    color: red;
+    color: palevioletred;
     padding: 5px;
 }
 
@@ -46,4 +47,9 @@ td p:nth-child(even) {
 
 em {
     background-color:rgb(199, 243,243);
+}
+
+.ma-classe {
+    /* background-color: pink; */
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - V/01 - Programmation Orientée Objet</title>   
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<body>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-light p-5 text-center">
+        <h1 class="display-4">JavaScript - V/01 - Programmation Orientée Objet </h1>
+        <p class="lead">Il existe 3 paradigmes (manières de faire) de programmation</p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
+
+        <section class="row mt-4">
+            <h2>1- Les <span title="Manière de faire, exemple">paradigmes</span> de la programmation orientée objet</h2>
+            <p>Il existe 3 paradigmes de programmation, c'est une façon d'approcher la programmation informatique, une façon de construire son code.</p>
+            <ul>
+                <li>La programmation procédurale</li>
+                <li>La programmation fonctionnelle</li>
+                <li>La programmation orientée objet</li>
+            </ul>
+            <div class="col-4">
+                <p>1- La programmation procédurale est le type de programmation le plus commun et le plus populaire. C’est une façon d’envisager son code sous la forme d’un enchainement d’étapes qui vont résoudre les problèmes un par un. Cela correspond à une approche verticale du code où celui-ci va s’exécuter de haut en bas, ligne par ligne. Jusqu’à présent, nous avons utilisé cette approche dans nos codes JavaScript.</p>
+            </div>
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <p>3- La programmation orientée objet est une façon de concevoir un code autour du concept d’objets. Un objet est une entité qui peut être vue comme indépendante et qui va contenir un ensemble de variables (qu’on va appeler propriétés) et de fonctions (qu’on appellera méthodes). Ces objets vont pouvoir interagir entre eux.</p>
+            </div>
+            <!-- fin col -->
+            <div class="col-8">
+                <h3>Exemple un objet nommé "utilisateur"</h3>
+                <code>let utilisateur = {<br>
+                    nom : ['Victor', 'Marie', 'Hugo'],<br>
+                    age : 2,<br>
+                    email : 'totor@hugo.com',<br>
+                    adresse : 'à Paris dans son avenue',<br>
+                <br>
+                bonjour: function() {<br>
+                    alert('J\'ai ' + this.age + ' ans et mon nom est ' + this.nom[0] + ' ' + this.nom[1] + ' ' + this.nom[2] + '.');<br>
+                        }<br>
+                }</code>
+                <p> Le développement orienté objet correspond à une autre façon d’envisager et d’organiser son code en groupant des éléments cohérents au sein d’objets.<br> Les intérêts supposés principaux de développer en orienté objet plutôt qu’en procédural sont de permettre une plus grande flexibilité du code ainsi qu’une meilleure lisibilité et une meilleure maintenabilité.</p>
+            </div>
+            <!-- fin col -->
+        </section>
+        <!-- fin rangée -->
+
+        
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+        <script src="../js/mon_js.js"></script>
+        <!-- Mes scripts JS en externe -->
+        <script src="introduction.js"></script>
+</body>
+</html>
