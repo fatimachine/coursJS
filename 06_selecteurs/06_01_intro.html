@@ -63,6 +63,34 @@
             </div>
             <!-- fin col -->
 
+          <div class="col-sm-12 col-md-6 bg-light">
+                <p class="une-classe">paragraphe 1</p>
+                <p class="une-classe">paragraphe 2</p>
+                <p class="une-classe">paragraphe 3</p>
+                <p class="une-classe">paragraphe 4</p>
+                <p class="une-classe">paragraphe 5</p>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+              <ul>
+                  <li>liste 1</li>
+                  <li> liste 2</li>
+                  <li>liste 3</li>
+                  <li> liste 4</li>
+                  <li class="bg-secondary">liste 5</li>
+                  <li>liste 6</li>
+              </ul>
+          </div>
+
+          <div class="col-12">
+              <p class="selectClasse">Paragraphe 1:Hello</p>
+              <p  class="selectClasse">Paragraphe 2 :Je change ce texte je passe le fond en lightblue et le texte en blanc et gras</p>
+              <p class="selectClasse">Paragraphe 3 : Quel beau temps!</p>
+              <p class="selectClasse">Paragraphe 4 :lorem. </p>
+              <p class="selectClasse">Paragraphe 5</p>
+              <p class="selectClasse">Paragraphe 6 </p>
+          </div>
+
         </section>
         <!-- fin rangée -->
 
@@ -141,6 +169,32 @@
         selectP[0].classList.add('m-4');
 
         // selectP[1].classList.add('bg-secondary');
+
+        // 6- avec QUerySelector
+        //ici je sélectionne un élément par son id
+        let query1 = document.querySelector('#titreN2');
+        console.log(query1);
+
+        let query2 = document.querySelectorAll('.une-classe');
+        console.log(query2);
+        let query3 = document.querySelectorAll('li');
+        console.log(query3);
+
+        query3[3].style.backgroundColor = "purple";
+
+        let query4 = document.querySelectorAll('li.bg-secondary');
+        console.log(query4);
+
+        //exo 
+
+        let query5 =document.querySelectorAll('.selectClasse');
+        console.log(query5);
+
+        query5[1].innerHTML = 'Youpi j\'ai changé le texte du paragraphe';
+
+        query5[1].style.backgroundColor = "lightblue";
+        query5[1].style.color = "white";
+        query5[1].style.fontVariant = "small-caps";
 
     </script>
 </body>
