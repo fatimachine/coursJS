@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title> Javascript Colombbus/Sommaire</title>
     <!-- MES STYLES -->
     <link rel="stylesheet" href="../coursJS/css/style.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-light" style="background-color:mistyrose ;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../coursJS/index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/00_entrainement/00_entrainement.html">00 Entrainement</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/01_introduction/01-01-introduction.html">01/Intro</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/02_variable_constante/02_01_intro.html">02/Variables-constantes</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/03_structure/03_01_intro.html">03/Structures</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/04_fonctions/04_01_intro.html">04/Fonctions</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/05_objets/05_01_intro.html">05/Objets</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/06_selecteurs/06_01_intro.html">06/Sélecteurs</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../coursJS/07_evenements/07_01_intro.html">07/Evènements</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                href="../coursJS/08_manipulations/#">08/Manipulations</a></li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page"
+                                    href="../coursJS/09_dom/#">09/Dom</a></li>
+
+
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <main>
         <h1>
             Javascript Colombbus/Sommaire
@@ -21,16 +69,30 @@
             <li><a href="#java"></a>Javascript n'est pas JAVA!!!!!</li>
         </ul>
         <h3 id="dynamique"> Javascript est un langage dynamique</h3>
-        <p>Ce langage va nous permettre de manipuler des contenus HTML ou des styles CSS et de les modifier en fonction de divers évènements ou variables.Un évènement peut être par exemple un clic d'utlisateur à un certain endroit de la page tandis qu'une variable peut être l'heure de la journée</p>
+        <p>Ce langage va nous permettre de manipuler des contenus HTML ou des styles CSS et de les modifier en fonction
+            de divers évènements ou variables.Un évènement peut être par exemple un clic d'utlisateur à un certain
+            endroit de la page tandis qu'une variable peut être l'heure de la journée</p>
 
         <h3 id="client">Javascript est un langage principalement côté client</h3>
-        <p>JS s'execute côté client, nous allons quand même pouvoir l'utiliser côté serveur à condition que l'on mette en place un environnement favorable,  <a href="https://nodejs.org/en/">en utilisant,par ex.node.js</a></p>
+        <p>JS s'execute côté client, nous allons quand même pouvoir l'utiliser côté serveur à condition que l'on mette
+            en place un environnement favorable, <a href="https://nodejs.org/en/">en utilisant,par ex.node.js</a></p>
 
         <h3 id="interprete">Javascript est un langage interprété</h3>
-        <p>Pour être interprété, JS doit être éxécuté directement dans un logiciel interpréteur : tous les navigateurs connus possèdent leur interpréteur JS</p>
+        <p>Pour être interprété, JS doit être éxécuté directement dans un logiciel interpréteur : tous les navigateurs
+            connus possèdent leur interpréteur JS</p>
 
         <h3 id="java">Javascript n'est pas JAVA</h3>
-        <p>Encore aujourd’hui, certaines personnes ont tendance à confondre les deux langages « Java » et « JavaScript ». Retenez ici que ces deux langages, bien que syntaxiquement assez proches à la base, reposent sur des concepts fondamentaux complètement différents et servent à effectuer des tâches totalement différentes.</p>
+        <p>Encore aujourd’hui, certaines personnes ont tendance à confondre les deux langages « Java » et « JavaScript
+            ». Retenez ici que ces deux langages, bien que syntaxiquement assez proches à la base, reposent sur des
+            concepts fondamentaux complètement différents et servent à effectuer des tâches totalement différentes.</p>
     </main>
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/mon_js.js"></script>
 </body>
+
 </html>

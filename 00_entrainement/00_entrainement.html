@@ -5,483 +5,513 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+       <!-- Bootstrap CSS -->
+	   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	   integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+   <!-- Bootstrap Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="../css/style.css">
+ 
     <title>Javascript-Entrainement</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-
-    <script>
-/*
-             PAGE ENTRAINEMENT SOMMAIRE
-             1- AFFICHAGE
-             2- TYPE DE DONNEES
-             3- CONSTANTES
-             4- CONCATENER
-             5- OPERATEURS NUMERIQUES
-             6- CONDITIONS
-             7- BOUCLES
-             8- FONCTIONS
-             9-SUPPLEMENTS
-             */
-
-// 1/AFFICHAGE
-
-document.write('<h1> 01 Entrainement Javascript</h1>');
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">1/AFFICHAGE</h2>');
-
-var maBoite; // je déclare une variable
-maBoite = 213; //je lui affecte une valeur ici un nombre un "number"
-
-let monAge = 12; // je déclare et j'affecte en même temps
-
-//  var maBoite2 = 56;
-
-
-//  console.log(maBoite2);
-console.log(maBoite, monAge);
-console.log(monAge);
-
-document.write('<p>Dans la variable maBoite il y a la valeur suivante:' + maBoite + '</p>');
-
-console.log('un message dans le console.log');
-
-//  alert('Ceci est un message d\'alerte');
-
-//  confirm('Merci de confirmer,svp.');
-
-//  prompt('Comment allez-vous?');
-
-// let humeur;
-// console.log(humeur);
-// humeur = prompt('Comment va ?');
-
-// console.log(humeur);
-
-// document.write('<p>Votre humeur?:' + humeur + '</p>');
-
-// let prenom;
-// console.log(prenom);
-// prenom = prompt('Quel est le prénom de votre maman?');
-// console.log(prenom);
-// document.write('<p>Quel est le prénom de votre maman?:' + prenom + '</p>');
-
-// portée locale ou globale de la variable
-// humeur et Prenom ont des portées globales 
-if (true) {
-	let nombre = 58;
-	// nombre a une portée locale 
-	console.info(nombre);
-}
-let nombre2;
-if (true) {
-	nombre2 = 999;
-}
-// ici la variable a une portée globale 
-console.log(nombre2);
-
-// une variable; le contenu varie
-var noteEval = 12;
-console.info(noteEval);
-
-// addition d'une valeur numérique (number) avec +=
-noteEval += 2;
-console.info(noteEval);
-
-// addition d'une valeur numérique (number) avec += soustraction -=, division /=, multiplication *=
-noteEval += 2
-	// noteEval=18
-console.info(noteEval);
-
-// 2/TYPE DE DONNEES
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">2/TYPE DE DONNEES</h2>');
-
-var monTexte = 'Voici une phrase pour Miredi avec une \ ';
-document.write('<p>' + monTexte + '</p>');
-console.log(typeof(monTexte));
-
-console.log(typeof(noteEval));
-
-document.write(typeof(monTexte) + '<br>');
-document.write(typeof(noteEval) + '<br>');
-
-
-// 3- CONSTANTES
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">3- CONSTANTES</h2>');
-
-// const neBougePas = 'Ma constante impossible à modifier !';
-// let meteo = 'beau temps';
-
-// console.log(meteo);
-
-// meteo = 'mauvais temps';
-
-// console.log(meteo);
-
-// console.log(neBougePas);
-
-// mini exo afficher avec 
-
-// document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> la  constante  neBougePas  contient "' + neBougePas + ' " </p>');
-
-// neBougePas = 'coucou';
-
-
-// 4- CONCATENER
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">4- CONCATENER</h2>');
-
-// mini exo 2 variable nom,prenom et affichez "The name is CHINE,Fatima CHINE
-let firstName = 'Maria';
-let lastName = 'Bond';
-console.log(firstName, lastName);
-
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">The name is ' + lastName + ' , ' + firstName + ' ' + lastName + '</p>');
-
-
-//    let firstName = 'Fatima';
-//    let lastName = 'Chine' ;
-//    document.write('<p>The name is ' + lastName + ' , ' + firstName + ' '+ lastName +'</p>');
-
-alert('The name is ' + lastName + ' , ' + firstName + ' ' + lastName + '');
-
-
-// 5- OPERATEURS NUMERIQUES
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>');
-
-// addition
-let addition = 10 + 5;
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une addition: ' + addition + ' " </p>');
-
-//exo affichez le résultat d'une mutiplication 
-let multiplication = 10 * 5;
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une mutiplication:  ' + multiplication + ' " </p>');
-
-
-//exo affichez le résultat d'une soustraction
-let soustraction = 10 - 5;
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une soustraction:  ' + soustraction + ' " </p>');
-
-//exo affichez le résultat d'une division
-let division = 10 / 3;
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une division : ' + division + ' " </p>');
-
-
-// modulo 
-// ex pour l'utilisation du modulo; répondre à la question suivante : j'ai 10 billes je les partage entre 3 personnes il m'en reste combien 
-
-let modulo = 10 % 3;
-console.log(modulo);
-
-// exo affichez : le modulo de 10%3 est 1 
-
-document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> le modulo de 10%3 est : ' + modulo + '  </p>');
-
-// exo 
-
-// document.write('<h3 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- exo- quel âge avez-vous ?</h3>');
-
-
-let age = prompt('quel âge avez-vous ?');
-console.log(age);
-document.write('<p style="margin:auto; background:lightgrey;width:80%;color:#fff;text-align: center;">Vous avez:' + age + 'ans</p>');
-
-//exo 
-//Consigne: 1- récupérer dans un prompt ()une valeur numérique donnée par un utilisateur
-// envoyer ensuite une alerte indiquant le résultat de cette valeur au cube puis au carrée 
-
-let votreChiffre = prompt('Quel est votre chiffre?');
-// console.log(votreChiffre);
-
-// console.log(votreChiffre  **3);
-// alert('votre chiffre=  ' + votreChiffre+'*'+votreChiffre+'');
-
-let auCarre = votreChiffre * votreChiffre;
-// console.log(auCarre);
-
-let auCube = votreChiffre * votreChiffre * votreChiffre;
-console.log(auCarre, auCube);
-
-alert('vous avez saisi le nombre: ' + votreChiffre + '\nce  chiffre au carré est égal à ' + auCarre + ' \nce chiffre au cube est :' + auCube + '');
-
-document.write('<p style="margin:auto; background:lightgrey;width:50%;color:#fff;text-align: center;">votre chiffre:' + votreChiffre + ' ce  chiffre au carré est égal à ' + auCarre + ' ce chiffre au cube est :' + auCube + '</p>');
-
-//   6- CONDITIONS
-
-document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;"> 6- CONDITIONS</h2>');
-
-let a = 2,
-	b = 5,
-	c = 2;
-console.log(a, b, c);
-
-//   mini exo 
-// si a est supérieur à b j'écris "a est supérieur" sinon j'écris a n'est pas supérieur à b dans un document write
-
-// if(a>b) {
-//     // si le test est vrai j'exécute le bloc qui suit 
-//     document.write('IF a contient' + a+ 'et cette valeur est inférieure à b');
-// }else{
-//     // sinon  
-//     document.write(' ELSE b contient ' + b + ' a n\'est donc pas supérieur à b ');  
-// }
-
-// mini exo 
-// tester l'égalité de a et b 
-
-// if( a== b ) {
-
-//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a est égal à b</p>');
-// }
-// else{
-//     // sinon  
-//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a n\'est pas égal à b</p>')
-// }
-
-// EXO 
-// tester si cette condition est remplie : a et b sont-ils égaux en valeur et en type 
-
-//  if( a=== b ) {
-
-//     document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est égal à b en valeur et en type</p>');
-// }
-//  else{
-// // sinon  
-//  document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est différent en valeur et/ou en type</p>')
-// }
-
-
-//EXO tester la valeur de a par rapport au chiffre 5 ; inférieur ?égal?supérieur? ou alors c'est pas un nombre,dans une condition multiple (blocs de code>document.write)
-
-console.log(a);
-
-if (a < 5) {
-	document.write('<p> 1/ a contient une valeur strictement supérieur à 5</p>');
-} else if (a == 5) {
-	document.write('<p>2/ a contient une valeur égale à 5</p>');
-} else if (a < 1) {
-	document.write('<p>3/ x contient une valeur strictement inférieur à 1</p>');
-} else if (a < 0) {
-	document.write('<p> 4/a contient une valeur strictement inférieur à 0</p>');
-} else if (a < -2) {
-	document.write('<p> 5/ a contient une valeur strictement inférieur à -2</p>');
-} else {
-	document.write('<p>6/ la valeur de a n\'a pas pu être comparée à un nombre</p>');
-}
-
-if (a > b && b > c) {
-	document.write('<p> pour a qui vaut ' + a + ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' a est supérieur à b et b est supérieur à c </p>');
-} else {
-	document.write('<p> on teste si a (' + a + ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas au moins une des deux conditions n\'est pas remplie</p>');
-}
-
-if (a > b || b > c) {
-	document.write('<p> pour a qui vaut ' + a + ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' ici au moins une des deux conditions est vraie</p>');
-} else {
-	document.write('<p> on teste si a (' + a + ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas aucune des conditions n\'est vraie.</p>');
-}
-
-// EXO récupérer dans une variable la réponse à la question suivante;"Parmis ces couleurs,le vert ,l'azur,le rouge ,le parme: quelle est votre couleur préférée?"
-// suite de l'exo: ensuite faites une condition if...else,if....else pour afficher selon la réponse la couleur préférée de votre visiteur....
-
-let couleur = prompt('Parmi ces couleurs,le vert ,l\'azur,le rouge ,le parme: quelle est votre couleur préférée ?');
-// console.log(couleur);
-
-//         document.write('<p>Parmi ces couleurs,le vert ,azur,le rouge ,le parme: quelle est votre couleur préférée ?:' + couleur + '</p>');
-
-
-//         if(couleur == 'vert'){
-//   document.write('<p>votre couleur préférée est le vert</p>');
-// }else if (couleur == 'azur') {
-//     document.write('<p>votre couleur préférée est l\'azur</p>');
-// }else if (couleur == 'rouge') {
-//     document.write('<p>votre couleur préférée est le rouge</p>');
-// }else if(couleur == 'parme') {
-//     document.write('<p>votre couleur préférée est le parme</p>');
-// }else {
-//     document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le '+ couleur + '</p>');
-// }
-
-//switch(),case break,case break,default pour lundi 
-
-switch (couleur) { /*  on va switcher,on va commuter sur la variable*/
-	case 'vert':
-		document.write('<p>votre couleur préférée est le vert</p>');
-		break; /* break ne pas oublier le break >>> il sort du switch si le cas est vrai*/
-	case 'azur':
-		document.write('<p>votre couleur préférée est l\'azur</p>');
-		break;
-	case 'rouge':
-		document.write('<p>votre couleur préférée est le rouge</p>');
-		break;
-	case 'parme':
-		document.write('<p>votre couleur préférée est le parme</p>');
-		break;
-	default:
-		/* après default il sortira du switch naturellement */
-		document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le ' + couleur + '</p>');
-}
-// 7- LES BOUCLES
-document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;">7 - LES BOUCLES</h2>');
-// EXO boucle while
-
-var w1 = 0;
-console.log(typeof w1, w1);
-
-while (w1 <= 15) { // tant que le contenu de la variable est inférieur ou égal à 15
-	document.write('<p>La variable w1 = ' + w1 + ',</p>'); // exécute ce bloc de code
-	w1++; // contenu de la variable + 1: incrémenter
-} // la boucle stoppe dès que w1 atteint 15
-
-// FOR  EXO 1
-// pour une variable for1 inférieure ou égale à 10 bouclez et incrémentez
-
-for (let for1 = 0; for1 <= 10; for1++) {
-	// console.log(for1);
-	document.write('for1 contient ' + for1 + ' à chaque tour de boucle.<br>');
-}
-
-document.write('<hr>');
-// EXO 2 une boucle for2 inférieure ou égale à 10 bouclez et incrémentez
-
-// suite exo 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
-
-for (let for2 = 0; for2 <= 10; for2++) {
-	// console.info(for2);
-	if (for2 == 10) {
-		document.write('et la boucle se termine là car for2 arrive à ' + for2);
-	} else {
-		document.write('for2 contient ' + for2 + '<br>');
-	} //fin du else
-} //fin du for
-
-document.write('<hr>');
-// EXO 2 la même boucle, autre manière de faire 
-
-for (let for3 = 0; for3 <= 10; for3++) {
-	if (for3 < 10) {
-		document.write('for3 contient ' + for3 + '<br>');
-	} else {
-		document.write('et la boucle se termine là car for3 arrive à ' + for3);
-	} //fin du else
-} //fin du for
-
-//8 - Fonctions predefinie et utilisateur 
-
-document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;text-transform:UpperCase">8 - fonctions predefinie et utilisateur </h2>');
-
-var phrase1 = 'Vive les frites!';
-var phrase2 = 'SILENCE !!!  SVP';
-console.log(phrase1, phrase2);
-
-//toUpperCase 
-
-// console.log(phrase1.toUpperCase());
-
-document.write('<p> Cette phrase en majuscule : ' + phrase1.toUpperCase() + '</p>');
-document.write('<p> Cette phrase en minuscule : ' + phrase2.toLowerCase() + '</p>');
-
-//une fonction super importante length
-
-// var phrase3 = 'The name is Bond, James Bond.';
-// console.log(phrase3.length);
-
-// document.write('<p>Test;dans la phrase suivante : ' + phrase3 + ' il y a ' + phrase3.length + ' caractères.</p>');
-
-// exo 
-
-// function beauTemps() {
-// 	return document.write('<p>il fait beau !</p>');
-// }
-
-// beauTemps();
-
-// function coucou () {
-//     return alert ('Coucou les amis');
-// }
-
-// coucou();
-
-// function direBonjour(prenom) {
-// 	var message = document.write('<p> Bonjour ' + prenom + '.Comment vas-tu ?</p>');
-// 	return message;
-// }
-// direBonjour('prenom');
-
-// function uneLigne() {
-// 	return document.write('<hr>');
-// }
-// uneLigne();
-//prompt() et une fonction
-
-// let prenom3 = prompt('Quel est votre prénom ?');
-// console.log = (prenom3);
-
-// function direBonjour2(prenom3) {
-//  var  message2 = document.write('<p>Bonjour, ' + prenom3 + ',Bienvenue sur notre site !</p>');
-//     return message2;
-// }
-
-// direBonjour2(prenom3);
-
-// exo 
-// 1 demandez "quelle est la saison ? et quelle est la température extérieure "
-
-// let saison = prompt('quelle est la saison ?');
-// let temperature = prompt(' quelle est la température extérieure ?');
-//  console.log(saison);
-
-// function questionMeteo(saison,temperature) {
-// var   message3 = document.write('<p>La saison:  ' + saison + ',et il fait, ' + temperature + ' °.</p>');
-//     return ('message3');
-
-// }
-// questionMeteo(saison,temperature);
-
-// exo//
-// faites un if else avec deux types de phrases si c'est le printemps = "nous sommes au printemps" si c'est l'une des 3 autres saison il faut écrire "nous sommes en "
-
-
-// if (saison == printemps) {
-// 	document.write('<p> If contient  ' + saison + '</p>');
-// } else {
-// 	document.write('<p>Else contient ' + saison + ' Nous  sommes en ' + saison + ' ! </p>');
-// }
-
-// EXO 
-    // faire une fonction quelleEcole() 
-    // demandez à votre visiteur "quel âge à votre enfant ?" 
-    // dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans our rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
-
-	var ageEnfant = prompt ('Quel âge à votre enfant ?');
-	console.log(ageEnfant);
-
-	function quelleEcole( ){
-		if (ageEnfant < 6 ) {
-			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il doit avoir plus de 6 ans pour rentrer à l\'école</p>');
-		}else if (ageEnfant >= 6 && ageEnfant < 11 ) {
-			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 6 ans et 11 ans , il va en primaire</p>');
-		}else if (ageEnfant >= 11 && ageEnfant < 15 ) {
-			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 11 ans et 15 ans , il va au collège</p>');
-		}else if (ageEnfant >= 15 && ageEnfant < 18 ) {
-			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 15 ans et 18 ans , il va au lycée</p>');
-		}else {
-			var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il n\'est pas scolarisable.</p>');
-		}
-		return ecole;
-	}//fin fonction
-	//on appelle la fonction après
-	quelleEcole(ageEnfant);
-
-    </script>
 
 </head>
 
 <body>
+	<nav class="navbar navbar-light" style="background-color:mistyrose ;">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html">Javascript/Home</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active" aria-current="page"
+							href="../00_entrainement/00_entrainement.html">00 Entrainement</a></li>
+							
 
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+
+    <script>
+		/*
+					 PAGE ENTRAINEMENT SOMMAIRE
+					 1- AFFICHAGE
+					 2- TYPE DE DONNEES
+					 3- CONSTANTES
+					 4- CONCATENER
+					 5- OPERATEURS NUMERIQUES
+					 6- CONDITIONS
+					 7- BOUCLES
+					 8- FONCTIONS
+					 9-SUPPLEMENTS
+					 */
+		
+		// 1/AFFICHAGE
+		
+		document.write('<h1> 01 Entrainement Javascript</h1>');
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">1/AFFICHAGE</h2>');
+		
+		var maBoite; // je déclare une variable
+		maBoite = 213; //je lui affecte une valeur ici un nombre un "number"
+		
+		let monAge = 12; // je déclare et j'affecte en même temps
+		
+		//  var maBoite2 = 56;
+		
+		
+		//  console.log(maBoite2);
+		console.log(maBoite, monAge);
+		console.log(monAge);
+		
+		document.write('<p>Dans la variable maBoite il y a la valeur suivante:' + maBoite + '</p>');
+		
+		console.log('un message dans le console.log');
+		
+		//  alert('Ceci est un message d\'alerte');
+		
+		//  confirm('Merci de confirmer,svp.');
+		
+		//  prompt('Comment allez-vous?');
+		
+		// let humeur;
+		// console.log(humeur);
+		// humeur = prompt('Comment va ?');
+		
+		// console.log(humeur);
+		
+		// document.write('<p>Votre humeur?:' + humeur + '</p>');
+		
+		// let prenom;
+		// console.log(prenom);
+		// prenom = prompt('Quel est le prénom de votre maman?');
+		// console.log(prenom);
+		// document.write('<p>Quel est le prénom de votre maman?:' + prenom + '</p>');
+		
+		// portée locale ou globale de la variable
+		// humeur et Prenom ont des portées globales 
+		if (true) {
+			let nombre = 58;
+			// nombre a une portée locale 
+			console.info(nombre);
+		}
+		let nombre2;
+		if (true) {
+			nombre2 = 999;
+		}
+		// ici la variable a une portée globale 
+		console.log(nombre2);
+		
+		// une variable; le contenu varie
+		var noteEval = 12;
+		console.info(noteEval);
+		
+		// addition d'une valeur numérique (number) avec +=
+		noteEval += 2;
+		console.info(noteEval);
+		
+		// addition d'une valeur numérique (number) avec += soustraction -=, division /=, multiplication *=
+		noteEval += 2
+			// noteEval=18
+		console.info(noteEval);
+		
+		// 2/TYPE DE DONNEES
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">2/TYPE DE DONNEES</h2>');
+		
+		var monTexte = 'Voici une phrase pour Miredi avec une \ ';
+		document.write('<p>' + monTexte + '</p>');
+		console.log(typeof(monTexte));
+		
+		console.log(typeof(noteEval));
+		
+		document.write(typeof(monTexte) + '<br>');
+		document.write(typeof(noteEval) + '<br>');
+		
+		
+		// 3- CONSTANTES
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">3- CONSTANTES</h2>');
+		
+		// const neBougePas = 'Ma constante impossible à modifier !';
+		// let meteo = 'beau temps';
+		
+		// console.log(meteo);
+		
+		// meteo = 'mauvais temps';
+		
+		// console.log(meteo);
+		
+		// console.log(neBougePas);
+		
+		// mini exo afficher avec 
+		
+		// document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> la  constante  neBougePas  contient "' + neBougePas + ' " </p>');
+		
+		// neBougePas = 'coucou';
+		
+		
+		// 4- CONCATENER
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">4- CONCATENER</h2>');
+		
+		// mini exo 2 variable nom,prenom et affichez "The name is CHINE,Fatima CHINE
+		let firstName = 'Maria';
+		let lastName = 'Bond';
+		console.log(firstName, lastName);
+		
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">The name is ' + lastName + ' , ' + firstName + ' ' + lastName + '</p>');
+		
+		
+		//    let firstName = 'Fatima';
+		//    let lastName = 'Chine' ;
+		//    document.write('<p>The name is ' + lastName + ' , ' + firstName + ' '+ lastName +'</p>');
+		
+		alert('The name is ' + lastName + ' , ' + firstName + ' ' + lastName + '');
+		
+		
+		// 5- OPERATEURS NUMERIQUES
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- OPERATEURS NUMERIQUES</h2>');
+		
+		// addition
+		let addition = 10 + 5;
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une addition: ' + addition + ' " </p>');
+		
+		//exo affichez le résultat d'une mutiplication 
+		let multiplication = 10 * 5;
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une mutiplication:  ' + multiplication + ' " </p>');
+		
+		
+		//exo affichez le résultat d'une soustraction
+		let soustraction = 10 - 5;
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une soustraction:  ' + soustraction + ' " </p>');
+		
+		//exo affichez le résultat d'une division
+		let division = 10 / 3;
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;">  le résultat d\'une division : ' + division + ' " </p>');
+		
+		
+		// modulo 
+		// ex pour l'utilisation du modulo; répondre à la question suivante : j'ai 10 billes je les partage entre 3 personnes il m'en reste combien 
+		
+		let modulo = 10 % 3;
+		console.log(modulo);
+		
+		// exo affichez : le modulo de 10%3 est 1 
+		
+		document.write('<p style="background:lightgrey;width:80%;color:#fff;text-align: center;"> le modulo de 10%3 est : ' + modulo + '  </p>');
+		
+		// exo 
+		
+		// document.write('<h3 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;">5- exo- quel âge avez-vous ?</h3>');
+		
+		
+		let age = prompt('quel âge avez-vous ?');
+		console.log(age);
+		document.write('<p style="margin:auto; background:lightgrey;width:80%;color:#fff;text-align: center;">Vous avez:' + age + 'ans</p>');
+		
+		//exo 
+		//Consigne: 1- récupérer dans un prompt ()une valeur numérique donnée par un utilisateur
+		// envoyer ensuite une alerte indiquant le résultat de cette valeur au cube puis au carrée 
+		
+		let votreChiffre = prompt('Quel est votre chiffre?');
+		// console.log(votreChiffre);
+		
+		// console.log(votreChiffre  **3);
+		// alert('votre chiffre=  ' + votreChiffre+'*'+votreChiffre+'');
+		
+		let auCarre = votreChiffre * votreChiffre;
+		// console.log(auCarre);
+		
+		let auCube = votreChiffre * votreChiffre * votreChiffre;
+		console.log(auCarre, auCube);
+		
+		alert('vous avez saisi le nombre: ' + votreChiffre + '\nce  chiffre au carré est égal à ' + auCarre + ' \nce chiffre au cube est :' + auCube + '');
+		
+		document.write('<p style="margin:auto; background:lightgrey;width:50%;color:#fff;text-align: center;">votre chiffre:' + votreChiffre + ' ce  chiffre au carré est égal à ' + auCarre + ' ce chiffre au cube est :' + auCube + '</p>');
+		
+		//   6- CONDITIONS
+		
+		document.write('<h2 style=" margin:auto; background:orange;width:80%;color:#fff;text-align: center;"> 6- CONDITIONS</h2>');
+		
+		let a = 2,
+			b = 5,
+			c = 2;
+		console.log(a, b, c);
+		
+		//   mini exo 
+		// si a est supérieur à b j'écris "a est supérieur" sinon j'écris a n'est pas supérieur à b dans un document write
+		
+		// if(a>b) {
+		//     // si le test est vrai j'exécute le bloc qui suit 
+		//     document.write('IF a contient' + a+ 'et cette valeur est inférieure à b');
+		// }else{
+		//     // sinon  
+		//     document.write(' ELSE b contient ' + b + ' a n\'est donc pas supérieur à b ');  
+		// }
+		
+		// mini exo 
+		// tester l'égalité de a et b 
+		
+		// if( a== b ) {
+		
+		//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a est égal à b</p>');
+		// }
+		// else{
+		//     // sinon  
+		//     document.write('<p>Pour  a qui vaut = ' + a+ ' et b qui vaut = ' + b + ' : a n\'est pas égal à b</p>')
+		// }
+		
+		// EXO 
+		// tester si cette condition est remplie : a et b sont-ils égaux en valeur et en type 
+		
+		//  if( a=== b ) {
+		
+		//     document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est égal à b en valeur et en type</p>');
+		// }
+		//  else{
+		// // sinon  
+		//  document.write('<p>Pour  a qui vaut = ' +  a+ ' et b qui vaut = ' +  b + ' : a est différent en valeur et/ou en type</p>')
+		// }
+		
+		
+		//EXO tester la valeur de a par rapport au chiffre 5 ; inférieur ?égal?supérieur? ou alors c'est pas un nombre,dans une condition multiple (blocs de code>document.write)
+		
+		console.log(a);
+		
+		if (a < 5) {
+			document.write('<p> 1/ a contient une valeur strictement supérieur à 5</p>');
+		} else if (a == 5) {
+			document.write('<p>2/ a contient une valeur égale à 5</p>');
+		} else if (a < 1) {
+			document.write('<p>3/ x contient une valeur strictement inférieur à 1</p>');
+		} else if (a < 0) {
+			document.write('<p> 4/a contient une valeur strictement inférieur à 0</p>');
+		} else if (a < -2) {
+			document.write('<p> 5/ a contient une valeur strictement inférieur à -2</p>');
+		} else {
+			document.write('<p>6/ la valeur de a n\'a pas pu être comparée à un nombre</p>');
+		}
+		
+		if (a > b && b > c) {
+			document.write('<p> pour a qui vaut ' + a + ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' a est supérieur à b et b est supérieur à c </p>');
+		} else {
+			document.write('<p> on teste si a (' + a + ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas au moins une des deux conditions n\'est pas remplie</p>');
+		}
+		
+		if (a > b || b > c) {
+			document.write('<p> pour a qui vaut ' + a + ' pour b qui vaut ' + b + ' et c qui vaut ' + c + ' ici au moins une des deux conditions est vraie</p>');
+		} else {
+			document.write('<p> on teste si a (' + a + ' ) est sup à b( ' + b + ') et si b est sup à c( ' + c + ') ;mais dans ce cas aucune des conditions n\'est vraie.</p>');
+		}
+		
+		// EXO récupérer dans une variable la réponse à la question suivante;"Parmis ces couleurs,le vert ,l'azur,le rouge ,le parme: quelle est votre couleur préférée?"
+		// suite de l'exo: ensuite faites une condition if...else,if....else pour afficher selon la réponse la couleur préférée de votre visiteur....
+		
+		let couleur = prompt('Parmi ces couleurs,le vert ,l\'azur,le rouge ,le parme: quelle est votre couleur préférée ?');
+		// console.log(couleur);
+		
+		//         document.write('<p>Parmi ces couleurs,le vert ,azur,le rouge ,le parme: quelle est votre couleur préférée ?:' + couleur + '</p>');
+		
+		
+		//         if(couleur == 'vert'){
+		//   document.write('<p>votre couleur préférée est le vert</p>');
+		// }else if (couleur == 'azur') {
+		//     document.write('<p>votre couleur préférée est l\'azur</p>');
+		// }else if (couleur == 'rouge') {
+		//     document.write('<p>votre couleur préférée est le rouge</p>');
+		// }else if(couleur == 'parme') {
+		//     document.write('<p>votre couleur préférée est le parme</p>');
+		// }else {
+		//     document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le '+ couleur + '</p>');
+		// }
+		
+		//switch(),case break,case break,default pour lundi 
+		
+		switch (couleur) { /*  on va switcher,on va commuter sur la variable*/
+			case 'vert':
+				document.write('<p>votre couleur préférée est le vert</p>');
+				break; /* break ne pas oublier le break >>> il sort du switch si le cas est vrai*/
+			case 'azur':
+				document.write('<p>votre couleur préférée est l\'azur</p>');
+				break;
+			case 'rouge':
+				document.write('<p>votre couleur préférée est le rouge</p>');
+				break;
+			case 'parme':
+				document.write('<p>votre couleur préférée est le parme</p>');
+				break;
+			default:
+				/* après default il sortira du switch naturellement */
+				document.write('<p>votre couleur préférée ni vert,ni azur,ni rouge,ni parme votre couleur préferée est le ' + couleur + '</p>');
+		}
+		// 7- LES BOUCLES
+		document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;">7 - LES BOUCLES</h2>');
+		// EXO boucle while
+		
+		var w1 = 0;
+		console.log(typeof w1, w1);
+		
+		while (w1 <= 15) { // tant que le contenu de la variable est inférieur ou égal à 15
+			document.write('<p>La variable w1 = ' + w1 + ',</p>'); // exécute ce bloc de code
+			w1++; // contenu de la variable + 1: incrémenter
+		} // la boucle stoppe dès que w1 atteint 15
+		
+		// FOR  EXO 1
+		// pour une variable for1 inférieure ou égale à 10 bouclez et incrémentez
+		
+		for (let for1 = 0; for1 <= 10; for1++) {
+			// console.log(for1);
+			document.write('for1 contient ' + for1 + ' à chaque tour de boucle.<br>');
+		}
+		
+		document.write('<hr>');
+		// EXO 2 une boucle for2 inférieure ou égale à 10 bouclez et incrémentez
+		
+		// suite exo 2 avec if else on rajoute à la fin de la boucle la phrase "et la boucle se termine là."
+		
+		for (let for2 = 0; for2 <= 10; for2++) {
+			// console.info(for2);
+			if (for2 == 10) {
+				document.write('et la boucle se termine là car for2 arrive à ' + for2);
+			} else {
+				document.write('for2 contient ' + for2 + '<br>');
+			} //fin du else
+		} //fin du for
+		
+		document.write('<hr>');
+		// EXO 2 la même boucle, autre manière de faire 
+		
+		for (let for3 = 0; for3 <= 10; for3++) {
+			if (for3 < 10) {
+				document.write('for3 contient ' + for3 + '<br>');
+			} else {
+				document.write('et la boucle se termine là car for3 arrive à ' + for3);
+			} //fin du else
+		} //fin du for
+		
+		//8 - Fonctions predefinie et utilisateur 
+		
+		document.write('<h2 style="margin:auto; background: orange;width: 80%; color: #fff;text-align: center;text-transform:UpperCase">8 - fonctions predefinie et utilisateur </h2>');
+		
+		var phrase1 = 'Vive les frites!';
+		var phrase2 = 'SILENCE !!!  SVP';
+		console.log(phrase1, phrase2);
+		
+		//toUpperCase 
+		
+		// console.log(phrase1.toUpperCase());
+		
+		document.write('<p> Cette phrase en majuscule : ' + phrase1.toUpperCase() + '</p>');
+		document.write('<p> Cette phrase en minuscule : ' + phrase2.toLowerCase() + '</p>');
+		
+		//une fonction super importante length
+		
+		// var phrase3 = 'The name is Bond, James Bond.';
+		// console.log(phrase3.length);
+		
+		// document.write('<p>Test;dans la phrase suivante : ' + phrase3 + ' il y a ' + phrase3.length + ' caractères.</p>');
+		
+		// exo 
+		
+		// function beauTemps() {
+		// 	return document.write('<p>il fait beau !</p>');
+		// }
+		
+		// beauTemps();
+		
+		// function coucou () {
+		//     return alert ('Coucou les amis');
+		// }
+		
+		// coucou();
+		
+		// function direBonjour(prenom) {
+		// 	var message = document.write('<p> Bonjour ' + prenom + '.Comment vas-tu ?</p>');
+		// 	return message;
+		// }
+		// direBonjour('prenom');
+		
+		// function uneLigne() {
+		// 	return document.write('<hr>');
+		// }
+		// uneLigne();
+		//prompt() et une fonction
+		
+		// let prenom3 = prompt('Quel est votre prénom ?');
+		// console.log = (prenom3);
+		
+		// function direBonjour2(prenom3) {
+		//  var  message2 = document.write('<p>Bonjour, ' + prenom3 + ',Bienvenue sur notre site !</p>');
+		//     return message2;
+		// }
+		
+		// direBonjour2(prenom3);
+		
+		// exo 
+		// 1 demandez "quelle est la saison ? et quelle est la température extérieure "
+		
+		// let saison = prompt('quelle est la saison ?');
+		// let temperature = prompt(' quelle est la température extérieure ?');
+		//  console.log(saison);
+		
+		// function questionMeteo(saison,temperature) {
+		// var   message3 = document.write('<p>La saison:  ' + saison + ',et il fait, ' + temperature + ' °.</p>');
+		//     return ('message3');
+		
+		// }
+		// questionMeteo(saison,temperature);
+		
+		// exo//
+		// faites un if else avec deux types de phrases si c'est le printemps = "nous sommes au printemps" si c'est l'une des 3 autres saison il faut écrire "nous sommes en "
+		
+		
+		// if (saison == printemps) {
+		// 	document.write('<p> If contient  ' + saison + '</p>');
+		// } else {
+		// 	document.write('<p>Else contient ' + saison + ' Nous  sommes en ' + saison + ' ! </p>');
+		// }
+		
+		// EXO 
+			// faire une fonction quelleEcole() 
+			// demandez à votre visiteur "quel âge à votre enfant ?" 
+			// dans une condition multiple >>> si il a moins de 6 ans lui dire "votre enfant doit avoir plus de 6 ans our rentrer à l'école", si il a entre 6 et 11 ans "votre enfant va en primaire", si il a entre 11 et 15 ans votre enfant va au collège, si il a entre 15 et 18 ans "votre enfant doit aller au lycée" sinon "votre enfant n'est pas en âge scolaire"
+		
+			var ageEnfant = prompt ('Quel âge à votre enfant ?');
+			console.log(ageEnfant);
+		
+			function quelleEcole( ){
+				if (ageEnfant < 6 ) {
+					var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il doit avoir plus de 6 ans pour rentrer à l\'école</p>');
+				}else if (ageEnfant >= 6 && ageEnfant < 11 ) {
+					var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 6 ans et 11 ans , il va en primaire</p>');
+				}else if (ageEnfant >= 11 && ageEnfant < 15 ) {
+					var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 11 ans et 15 ans , il va au collège</p>');
+				}else if (ageEnfant >= 15 && ageEnfant < 18 ) {
+					var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il a entre 15 ans et 18 ans , il va au lycée</p>');
+				}else {
+					var ecole = document.write('<p>Votre enfant a ' + ageEnfant + ' ans il n\'est pas scolarisable.</p>');
+				}
+				return ecole;
+			}//fin fonction
+			//on appelle la fonction après
+			quelleEcole(ageEnfant);
+		
+			</script>
+	        <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
