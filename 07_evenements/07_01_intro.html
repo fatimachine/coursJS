@@ -36,7 +36,7 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -77,15 +77,16 @@
     <form class="row g-3 border border-light p-2" method="post" action="#">
         <div class="col-auto">
             <label for="inputEmail" class="visually-hidden">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input type="email" class="form-control" id="email" placeholder="Email">
         
         </div>
         <div class="col-auto">
           <label for="inputPassword2" class="visually-hidden">Mot de passe</label>
-          <input type="password" class="form-control" id="inputPassword2" placeholder="Mot de passe">
+          <input type="password" class="form-control" id="pass" placeholder="Mot de passe" required>
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-light mb-3">Connectez-vous</button>
+            <button type="reset" class="btn btn-danger mb-3">Effacer</button>
+          <button type="submit" class="btn btn-light mb-3" id="submit">Connectez-vous</button>
         </div>
       </form>
 </section>

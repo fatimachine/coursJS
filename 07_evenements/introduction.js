@@ -54,3 +54,36 @@ function fonctionDivBleu(e){
     this.style.fontSize = '1.5em';
     
 }
+
+//Formulaire
+
+document.querySelector('#email').addEventListener('focus',inputEmailFocus);
+
+function inputEmailFocus(){
+    this.style.backgroundColor = 'pink';
+    this.classList.add('text-white');
+}
+
+// document.querySelector('#email').addEventListener('blur',inputEmailFocus);
+
+// function inputEmailFocus(){
+//     this.classList.add('bg-danger');
+//     this.classList.add('text-white');
+// }
+
+document.querySelector('#pass').addEventListener('blur',inputPasswordBlur);
+function inputPasswordBlur(){
+    this.style.backgroundColor = 'pink';
+    this.classList.add('text-white');
+
+}
+
+//écouteur d'évènement sur le bouton
+document.querySelector('#submit').addEventListener('click',inputBtnSubmit);
+
+function inputBtnSubmit(event){
+    event.preventDefault();//neutralise le formulaire pour la démo ou si on récupère les données en développement
+    alert('Bienvenue!');
+    this.classList.add('bg-danger');
+    this.innerHTML = "Connecté";
+}
