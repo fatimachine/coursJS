@@ -12,8 +12,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <title>JavaScript - VIII/02 - Diaporama avec Set Interval</title>
+    <title>JavaScript - VIII/05 - Toggle</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .cache{
+            display: none;
+        }
+    </style>
 
     <!-- <script src="intro.js"></script> -->
 </head>
@@ -47,8 +53,8 @@
     <!-- En-tête de page -->
     <!-- =========================== -->
     <div class="container-fluid bg-light p-5 text-center">
-        <h1 id="titreN1" class="display-4">JavaScript - VIII/02 - Diaporama avec Set Interval</h1>
-        <p class="lead"><i class="bi bi-suit-heart"></i>Les diaporamas en JS<i class="bi bi-suit-heart"></i> </p>
+        <h1 id="titreN1" class="display-4">JavaScript - VIII/05 - Toggle</h1>
+        <p class="lead"><i class="bi bi-suit-heart"></i>Toggle : Afficher,cacher un élément <i class="bi bi-suit-heart"></i> </p>
     </div>
     <!-- =========================== -->
     <!-- Conteneur principal -->
@@ -56,14 +62,21 @@
     <div class="container p-4">
 
         <section class="row mt-4">
-            <div class="col-12 col-md-6">
-                <h2>Avec setInterval()</h2>
+            <div class="col-12">
+           <button type="button" class="btn btn-outline-light" id="cacheImage">Afficher , cacher l'image</button>
             </div>
-            <div class="col-12 col-md-6 ">
-             <div id="diapo1">
-                <img src="img/1.jpg" alt="de l'herbe" class="img-fluid" id="imgDiapo1">
-                </div>
+         
+            <!-- fin col -->
+
+         
+        </section>
+
+        
+        <section class="row mt-4">
+            <div class="col-12 ">
+           <img src="../img/paris-1225923_1280.jpg" alt="paris" class="img-fluid cache">
             </div>
+           
             <!-- fin col -->
 
          
@@ -79,8 +92,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <script src="../js/mon_js.js"></script>
-    <script src="setinterval.js"></script>
+        <script src="toggle.js"></script>
 
 </body>
 
