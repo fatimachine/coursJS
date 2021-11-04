@@ -15,7 +15,7 @@ main{
 
 .container {
     background-color: palevioletred;
-    color: white;
+    /* color: white; */
 }
 
 .bouton {

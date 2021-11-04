@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <title>JavaScript - VIII/04 - Formulaire</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- <script src="intro.js"></script> -->
+</head>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color:mistyrose ;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Javascript/Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../08_manipulations/08_01_diaporama.html">Diaporama</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../08_manipulations/08_02_setinterval.html">Diaporama avec Set Interval</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../08_manipulations/08_03_keydown.html">Keydown</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="../08_manipulations/08_04_formulaire.html">Formulaire</a></li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-light p-5 text-center">
+        <h1 id="titreN1" class="display-4">JavaScript - VIII/04 - Formulaires</h1>
+        <p class="lead"><i class="bi bi-suit-heart"></i>Forms<i class="bi bi-suit-heart"></i> </p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4 border border-primary">
+
+        <section class="row mt-4 ">
+            <div class="col-4">
+                <h2>Formulaire 1:</h2>
+            </div>
+
+          <div class="col-8">
+            <form class="border border-light " method="get" action="#" name="form1">
+                <div class="row">
+                <div class="col">
+                 
+                    <input type="text" name="pseudo" id="pseudo" class="form-control" placeholder="Votre pseudo"required>
+                    <label for="pseudo">Votre pseudo</label>
+
+                </div>
+
+                <div class="col">
+             
+                    <input type="password" class="form-control" name="mdp" id="mdp" placeholder="Mot de passe"required>
+                        <label for="mdp">Mot de passe</label>
+                </div>
+
+               <div class="col">
+                <button type="submit" class="btn btn-light mb-3" id="submit" onclick="controleForm()">Connectez-vous</button>
+                   
+               </div>
+          </div>
+          <!-- fin row form -->
+        </form>
+        
+    </div>
+    <!-- fin col -->
+        </section>
+        <!-- fin section 1 -->
+
+        <section class="row mt-4">
+            <div class="col-4">
+                <h2>Formulaire 2 : </h2>
+            </div>
+            <div class="col-8">
+            
+                    <form  method="POST" action="#" name="inscription" id="formulaireInscription">
+                    
+                            <div class="form-floating mb-3">
+                          
+                            <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prénom" >
+                            <label for="prenom" >Prénom</label>
+                        </div>
+            
+                        <div class="form-floating mb-3">
+                          
+                            <input type="text" class="form-control" id="nom" placeholder="Nom">
+                            <label for="nom">Nom de famille</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          
+                           
+                            <input type="password" class="form-control" name="pass" id="pass" placeholder="Mot de passe">
+                                <label for="pass">Mot de passe</label>
+                        </div>
+            
+                        <div class="form-floating mb-3">
+                           
+                            <input type="password" class="form-control" name="confpass" id="confpass" placeholder=" Confirmer votre mot de passe">
+                            <label for="confpass"> Confirmer votre mot de passe</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-light mb-3" id="submit2" value="inscription">Inscription</button>
+                        <!-- <button type="reset" class="btn btn-danger mb-3">Effacer</button> -->
+                        <button id="resetForm" class="btn btn-danger">Effacer</button>
+         
+                
+                    </form>
+        </div>
+        </section>
+
+
+    </div>
+    <!-- fin div container -->
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/mon_js.js"></script>
+    <!-- <script src="form.js"></script> -->
+    <script>
+        // contrôle du formulaire avec une fonction
+        // vérification des contenus dans les 2 input 
+
+        // function controleForm() {  // event ; paramètre à enlever également
+        //     //event.preventDefault(); // pour empêcher l'envoi du formulaire , à enlever quand le site est terminé
+
+        //     if ( document.form1.pseudo.value.length < 5 || document.form1.pseudo.value.length > 15 ) {
+        //         console.log(document.form1.pseudo.value);
+        //         console.log(document.form1.pseudo.value.length);
+        //         alert('Votre pseudo doit contenir au moins 5 et au plus 15 caractères');
+        //     }
+
+        //     //idem pour le mot de passe entre 3 et 12 caractères
+        // }
+
+        
+        function controleForm() { 
+            if ( document.form1.mdp.value.length < 3 || document.form1.mdp.value.length > 12 ) {
+                console.log(document.form1.mdp.value);
+                console.log(document.form1.mdp.value.length);
+                alert('Votre mot de passe doit contenir entre 3 et 12 caractères');
+            }
+
+        }
+
+        //contrôle du formulaire d'inscription avec une fonction
+        let formInscrip = document.getElementById('formulaireInscription');
+        console.log(formInscrip);
+
+        //écoute de l'envoie du formulaire
+
+        formInscrip.addEventListener('submit',inscriptionForm);
+
+        //création de la fonction
+        function inscriptionForm(event) {
+            event.preventDefault();
+            //récupération du contenu des champs du formulaire
+            //
+            let prenom = event.target.prenom.value;
+            nom = event.target.nom.value;
+            pass = event.target.pass.value;
+            confpass = event.target.confpass.value;
+
+            
+            console.log(prenom,nom,pass,confpass);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
