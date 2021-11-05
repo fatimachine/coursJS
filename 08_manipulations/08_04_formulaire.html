@@ -14,6 +14,17 @@
 
     <title>JavaScript - VIII/04 - Formulaire</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .error {
+            border: 3px solid red;
+        }
+        .valide {
+            border: 3px solid green;
+        }
+        .rouge {
+            border: 3px solid red;
+        }
+    </style>
 
     <!-- <script src="intro.js"></script> -->
 </head>
@@ -114,13 +125,13 @@
                           
                            
                             <input type="password" class="form-control" name="pass" id="pass" placeholder="Mot de passe">
-                                <label for="pass">Mot de passe</label>
+                                <label for="pass" id="placeholder1">Mot de passe</label>
                         </div>
             
                         <div class="form-floating mb-3">
                            
                             <input type="password" class="form-control" name="confpass" id="confpass" placeholder=" Confirmer votre mot de passe">
-                            <label for="confpass"> Confirmer votre mot de passe</label>
+                            <label for="confpass" id="placeholder2"> Confirmer votre mot de passe</label>
                         </div>
 
                         <button type="submit" class="btn btn-light mb-3" id="submit2" value="inscription">Inscription</button>
@@ -143,58 +154,8 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/mon_js.js"></script>
-    <!-- <script src="form.js"></script> -->
-    <script>
-        // contrôle du formulaire avec une fonction
-        // vérification des contenus dans les 2 input 
-
-        // function controleForm() {  // event ; paramètre à enlever également
-        //     //event.preventDefault(); // pour empêcher l'envoi du formulaire , à enlever quand le site est terminé
-
-        //     if ( document.form1.pseudo.value.length < 5 || document.form1.pseudo.value.length > 15 ) {
-        //         console.log(document.form1.pseudo.value);
-        //         console.log(document.form1.pseudo.value.length);
-        //         alert('Votre pseudo doit contenir au moins 5 et au plus 15 caractères');
-        //     }
-
-        //     //idem pour le mot de passe entre 3 et 12 caractères
-        // }
-
-        
-        function controleForm() { 
-            if ( document.form1.mdp.value.length < 3 || document.form1.mdp.value.length > 12 ) {
-                console.log(document.form1.mdp.value);
-                console.log(document.form1.mdp.value.length);
-                alert('Votre mot de passe doit contenir entre 3 et 12 caractères');
-            }
-
-        }
-
-        //contrôle du formulaire d'inscription avec une fonction
-        let formInscrip = document.getElementById('formulaireInscription');
-        console.log(formInscrip);
-
-        //écoute de l'envoie du formulaire
-
-        formInscrip.addEventListener('submit',inscriptionForm);
-
-        //création de la fonction
-        function inscriptionForm(event) {
-            event.preventDefault();
-            //récupération du contenu des champs du formulaire
-            //
-            let prenom = event.target.prenom.value;
-            nom = event.target.nom.value;
-            pass = event.target.pass.value;
-            confpass = event.target.confpass.value;
-
-            
-            console.log(prenom,nom,pass,confpass);
-
-        }
-
-    </script>
-
+    <script src="form.js"></script>
+ 
 </body>
 
 </html>
