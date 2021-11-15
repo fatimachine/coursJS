@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- MES STYLES -->
+  <link rel="stylesheet" href="css/style.css">
+    <title>Javascript Entrainement perso</title>
+   
+    <!-- Mon code JS est ici placé dans l'en-tête, dans l'élément head de mon fichier, à l'intérieur de la balise script. Ce code récupère l'heure et l'actualise toutes les secondes et nous permet de l'afficher ou de la masquer via un bouton -->
+    <!-- JS !!!  ; ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
+   
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color:mistyrose ;">
+		<div class="container-fluid">
+            <a class="navbar-brand" href="../coursJS/index.html">Javascript/Home</a>
+			
+		</div>
+	</nav>
+
+    <main>
+        <h1>
+            Javascript Entrainement Perso
+        </h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+    </main>
+
+    <script>
+// alert('coucou les loulous');
+
+console.log('--------------Switch---------------');
+let mesFruits = prompt('Quel est le prix au kilo pour(insérer un fruit)?');
+
+
+switch (mesFruits) {
+  case "Oranges":
+  document.getElementById('p1').innerHTML =("Oranges : 0.59 € le kilo.");
+    break;
+  case "Pommes":
+  document.getElementById('p1').innerHTML =("Pommes : 0.32 € le kilo.");
+    break;
+  case "Bananes":
+  document.getElementById('p1').innerHTML =("Bananes : 0.48 € le kilo.");
+    break;
+  case "Cerises":
+  document.getElementById('p1').innerHTML =("Cerises : 3.00 € le kilo.");
+    break;
+  case "Mangues":
+  case "Papayes":
+  document.getElementById('p1').innerHTML =("Mangues et papayes : 2.79 € le kilo.");
+    break;
+  default:
+  document.getElementById('p2').innerHTML =("Désolé, nous n'avons plus de " + mesFruits + ".");
+}
+
+prompt =("Autre chose ?");
+
+
+
+
+
+
+   </script>
+           <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+</html>

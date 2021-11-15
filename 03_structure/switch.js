@@ -28,3 +28,5 @@ switch(x) {//on va switcher, on va commuter sur la variable
     default:// après default il sortira du switch naturellement
         document.getElementById('p1').innerHTML =  'x ne contient ni 2, ni 5, ni 10, ni 15, ni 20 !!! ';
 }//fin switch
+
+
