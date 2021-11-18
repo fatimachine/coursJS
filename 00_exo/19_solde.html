@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Bootstrap CSS -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+     <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="../css/style.css">
+   
+    <title>Exo 19 -Solde </title>
+    
+</head>
+<body>
+         <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-light p-5 text-center">
+        <h1 class="display-4 border border-secondary bg-white">Exo 19 - Solde/Une boucle for</h1>
+       
+    
+    </div>
+    <script>
+        let monSoldeBanque = 1500;
+ 
+         let montant = prompt('combien voulez retirer ?');
+         let nbRetraits = prompt('Combien de retraits ?');
+        //  console.log(monSoldeBanque,montant,nbRetraits);
+ 
+         for(let i=0; i<nbRetraits; i++){
+      
+         monSoldeBanque =monSoldeBanque-montant;
+             console.log(monSoldeBanque);
+         }
+     
+     
+ 
+ let montant2 = parseInt(prompt('combien voulez retirer ?'));
+ console.log(typeof montant2,montant2);
+ let nbRetraits2 = parseInt(prompt('Combien de retraits ?'));
+ console.log(typeof nbRetraits2,nbRetraits2);
+
+ for(let i=0; i<nbRetraits2; i++){
+
+ monSoldeBanque =monSoldeBanque-montant2;
+     console.log('nouveau solde :',monSoldeBanque);
+ }
+    </script>
+
+
+
+          <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+</body>
+</html>
