@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <!-- MES STYLES -->
-  <link rel="stylesheet" href="../css/style.css">
-    <title>Javascript Chap 1/Introduction</title>
-   
-    <!-- Mon code JS est ici placé dans l'en-tête, dans l'élément head de mon fichier, à l'intérieur de la balise script. Ce code récupère l'heure et l'actualise toutes les secondes et nous permet de l'afficher ou de la masquer via un bouton -->
-    <!-- JS !!!  ; ouvrez toujours l'inspecteur de votre navigateur et sa console pour avoir les informations sur les scripts -->
-   
+
+    <title>JavaScript - VIII/01 - Diaporama</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- <script src="intro.js"></script> -->
 </head>
+
 <body>
     <nav class="navbar navbar-light" style="background-color:mistyrose ;">
         <div class="container-fluid">
@@ -30,7 +31,7 @@
                             href="../coursJS/00_entrainement/00_entrainement.html">00 Entrainement</a></li>
                     <li class="nav-item"><a class="nav-link "
                             href="../coursJS/01_introduction/01-01-introduction.html">01/Intro</a></li>
-                    <li class="nav-item"><a class="nav-link active " aria-current="page"
+                    <li class="nav-item"><a class="nav-link "
                             href="../coursJS/02_variable_constante/02_01_intro.html">02/Variables-constantes</a></li>
                     <li class="nav-item"><a class="nav-link "
                             href="../coursJS/03_structure/03_01_intro.html">03/Structures</a></li>
@@ -44,7 +45,7 @@
                             href="../coursJS/07_evenements/07_01_intro.html">07/Evènements</a></li>
                             <li class="nav-item"><a class="nav-link " 
                                 href="../coursJS/08_manipulations/08_01_diaporama.html">08/Manipulations</a></li>
-                                <li class="nav-item"><a class="nav-link "
+                                <li class="nav-item"><a class="nav-link active " aria-current="page"
                                     href="../09_dom/09_dom.html">09/Dom</a></li>
 
 
@@ -59,41 +60,44 @@
         </div>
     </nav>
 
-    <main>
-        <h1>
-            Javascript Chap 1/Introduction 
-        </h1>
-        <p id="tog" class="stabilo">Il est actuellement <span id="heure"></span></p>
+    <!-- =========================== -->
+    <!-- En-tête de page -->
+    <!-- =========================== -->
+    <div class="container-fluid bg-light p-5 text-center">
+        <h1 id="titreN1" class="display-4">JavaScript - IX/01 - Dom</h1>
+        <p class="lead"><i class="bi bi-suit-heart"></i><i class="bi bi-suit-heart"></i> </p>
+    </div>
+    <!-- =========================== -->
+    <!-- Conteneur principal -->
+    <!-- =========================== -->
+    <div class="container p-4">
 
-        <button id="bouton">Cacher : afficher l'heure</button>
-    </main>
+        <section class="row mt-4">
+            <div class="col-12 col-md-6 ">
+                <h2>dom</h2>
+                      </div>
+            <!-- fin col -->
+    
+            <div class="col-12 col-md-6 ">
+                  </div>
+            <!-- fin col -->
+          
+        </section>
+        <!-- fin rangée -->
+       
 
-    <script>
-        window.addEventListener('load',horloge);
-           function horloge(){
-               let d = new Date();
-               document.getElementById('heure').innerHTML = d.toLocaleTimeString();
-               setTimeout(horloge, 1000);
-           }
+    </div>
+    <!-- fin div container -->
 
-           document.addEventListener('DOMContentLoaded', function(){
-               const cache = document.getElementById('bouton');
-               cache.addEventListener('click',cacheHorloge);
-               document.getElementById('tog').style.display = 'block';
-               function cacheHorloge(){
-                   let para = document.getElementById('tog');
-                   if(para.style.display == 'block'){
-                       para.style.display = 'none';
-                       }else{
-                           para.style.display = 'block';
-                   }
-               }
-           });
-   </script>
-           <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/mon_js.js"></script>
+    <script src="dom.js"></script>
+
 </body>
+
 </html>
