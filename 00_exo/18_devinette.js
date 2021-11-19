@@ -17,9 +17,6 @@ console.log(nbre100);
 let nbre = Math.floor(nbre100);
   
 
-
-
-
 for (var i = 1; i <= 6; i++ ) {
    var choix = parseInt(prompt('Entre un nombre entre 1 et 100.  Tu as 6 essais.'));
         if (!isNaN(choix)) {
